@@ -1,6 +1,11 @@
 import random
 import sys
 import time
+import os
+import sys
+
+# Add the 'story_paths' directory to the system path
+sys.path.append(os.path.join(os.path.dirname(__file__), 'story_paths'))
 
 from helpers import printcool, start_game
 from story_path1 import path1
@@ -10,7 +15,6 @@ class Character:
     def __init__(self, name):
         self._name = name
         self.health = 100
-        self.injuries = None
         self.weapon = None
 
     def hurty(self, damage_amount):
