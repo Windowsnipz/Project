@@ -2,6 +2,35 @@ import sys
 import random
 import time
 
+# Character object
+class Character:
+    def __init__(self, name):
+        self._name = name
+        self.health = 100
+        self.weapon = None
+
+    def hurty(self, damage_amount):
+        self.health -= damage_amount
+
+    def heal(self, restore_amount):
+        self.health += restore_amount
+
+    @property
+    def name(self):
+        return self._name
+    
+
+# Weapon object
+class Weapon:
+    def __init__(self, name, damage):
+        self.weapon_name = name
+        self.damage = damage
+
+    @property
+    def name(self):
+        return self.weapon_name
+
+
 def random_weapon():
     num = random.randint(1,3)
     if num == 1:

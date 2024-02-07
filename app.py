@@ -10,33 +10,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'story_paths'))
 from helpers import printcool, start_game
 from story_path1 import path1
 
-# Character object
-class Character:
-    def __init__(self, name):
-        self._name = name
-        self.health = 100
-        self.weapon = None
-
-    def hurty(self, damage_amount):
-        self.health -= damage_amount
-
-    def heal(self, restore_amount):
-        self.health += restore_amount
-
-    @property
-    def name(self):
-        return self._name
-
-# Weapon object
-class Weapon:
-    def __init__(self, name, damage):
-        self.weapon_name = name
-        self.damage = damage
-
-    @property
-    def name(self):
-        return self.weapon_name
-
 
 
 

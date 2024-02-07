@@ -1,5 +1,4 @@
-from helpers import printcool, wait, yayornay, get_character_name
-from app import Character
+from helpers import Character, printcool, wait, yayornay, get_character_name
 
 # Defining story path 1
 def path1():
