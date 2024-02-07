@@ -9,6 +9,11 @@ pygame.display.set_icon(pygame.image.load(os.path.join("Assets", "spiffo.png")))
 FPS = 60
 HEART = pygame.image.load(os.path.join("Assets", "heart.png"))
 
+def draw_window():
+    WIN.fill((0, 0, 0))
+    WIN.blit(HEART, (400, 400))
+    pygame.display.update()
+
 def main():
     clock = pygame.time.Clock()
     run = True
@@ -20,7 +25,7 @@ def main():
                 run = False
 
         
-        pygame.display.update()
+        draw_window()
     
     
     pygame.quit()
