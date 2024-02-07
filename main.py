@@ -2,7 +2,7 @@ import pygame
 
 SCREEN_WIDTH, SCREEN_HEIGHT = 900, 500
 WIN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("Project Zombois")
+pygame.display.set_caption("Zomboid: Rosewood Rising")
 
 def main():
     run = True
