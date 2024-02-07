@@ -1,0 +1,39 @@
+protag.name finds themself awake in the dim spare bedroom of their house.
+Upon getting out of bed, they examine their surroundings.
+protag.name sees a spawn_weapon lying on top of the chestnut dresser.
+Pick the spawn_weapon up?
+    if y:
+        protag.name decides to pick up the spawn_weapon and wield tightly, as if it were important.
+    if n:
+        protag.name decides to leave the spawn_weapon as is, and move on.
+
+While coming down the stairs, all seems eerily quiet...
+Overcast weather was evident through the pale curtains of the living room windows.
+However... The atmosphere was not the only thing that carried a pale demeanor.
+
+Lying fetal under the coffee table was protag.name's daughter, Emily.
+Softly call Emily's name, or sneak away?
+    if call:
+        "...Emily"
+        Rolling to face protag.name, Emily's face bore tears.
+        "Something feels wrong," she whimpered.
+
+        "How long have I been asleep?" asked protag.name
+        Emily turned her eyes away, staring up at the bottom of the coffee table as if it were the ceiling.
+        The tears pooling in her eyes carried answers that protag.name was not getting.
+
+        Emily starts to emerge from under the coffee table.
+        Offer to hold her, or do nothing?
+            if hold:
+                "Come here, Em. Let's go outside."
+                Holding Emily in their arms, protag.name makes their way to the front door of their Kentucky home.
+                Upon opening the door, they go outside.
+            else:
+                Emily stands up, arms wrapped around her stomach as if she were in pain.
+                "Something feels terrible"
+                protag.name and Emily make their way to the front door of their Kentucky home, and walk outside.
+
+    if away:
+        You slip away, with an ominous feeling hanging about when you find yourself in the kitchen. --protag.name
+        Looking out of the window above the sink, it looked as gray as you would imagine.
+        A very light fog accompanied the cloudy day, covering the suburban neighborhood.
