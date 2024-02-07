@@ -4,11 +4,9 @@ import time
 import os
 import sys
 
-# Add the 'story_paths' directory to the system path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'story_paths'))
 
 from helpers import printcool, start_game
-from story_path1 import path1
+from story_paths.story_path1 import path1
 
 
 
