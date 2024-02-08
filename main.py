@@ -15,7 +15,7 @@ HEART_HALF = pygame.image.load(os.path.join("Assets", "heart_half.png"))
 
 hearts = [(HEART, (350, 400)), (HEART, (380, 400)), (HEART, (410, 400)), 
           (HEART, (440, 400)), (HEART, (470, 400))]
-health = 7
+health = 10
 
 # Update the hearts based on the health
 def get_hearts(health):
