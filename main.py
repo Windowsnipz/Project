@@ -11,24 +11,50 @@ HEART = pygame.image.load(os.path.join("Assets", "heart.png"))
 HEART_EMPTY = pygame.image.load(os.path.join("Assets", "heart_empty.png"))
 HEART_HALF = pygame.image.load(os.path.join("Assets", "heart_half.png"))
 hearts = [(HEART, (360, 400)), (HEART, (390, 400)), (HEART, (420, 400)), 
-          (HEART_HALF, (450, 400)), (HEART_EMPTY, (480, 400))]
+          (HEART, (450, 400)), (HEART, (480, 400))]
+health = 10
+
+# Update the hearts based on the health
+def get_hearts(health):
+    hearts = []
+    for i in range(5):
+        x = 360 + (30 * i) # x position
+        y = 400
+        if health > i * 2 + 1:
+            hearts.append((HEART, (x, y)))
+        elif health > i * 2:
+            hearts.append((HEART_HALF, (x, y)))
+        else:
+            hearts.append((HEART_EMPTY, (x, y)))
+    return hearts
+    
 
 def draw_window():
     WIN.fill((0, 0, 0))
+    hearts = get_hearts(health)
     for heart, pos in hearts:
         WIN.blit(heart, pos)
     pygame.display.update()
+
 
 def main():
     clock = pygame.time.Clock()
     run = True
     while run:
 
+
         clock.tick(FPS)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
 
+
+        keys = pygame.key.get_pressed()
+        for num_key in range(pygame.K_0, pygame.K_9 + 1):
+            if keys[num_key]:
+                global health # Declare health as a global variable, so now you can change it
+                health = num_key - pygame.K_0
+                break
         
         draw_window()
     
