@@ -12,8 +12,11 @@ HEART_EMPTY = pygame.image.load(os.path.join("Assets", "heart_empty.png"))
 
 def draw_window():
     WIN.fill((0, 0, 0))
-    WIN.blit(HEART, (400, 400))
+    WIN.blit(HEART, (360, 400))
+    WIN.blit(HEART, (390, 400))
+    WIN.blit(HEART, (420, 400))
     WIN.blit(HEART_EMPTY, (450, 400))
+    WIN.blit(HEART_EMPTY, (480, 400))
     pygame.display.update()
 
 def main():
