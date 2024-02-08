@@ -48,13 +48,6 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
 
-
-        keys = pygame.key.get_pressed()
-        for num_key in range(pygame.K_0, pygame.K_9 + 1):
-            if keys[num_key]:
-                global health # Declare health as a global variable, so now you can change it
-                health = num_key - pygame.K_0
-                break
         
         draw_window()
     
