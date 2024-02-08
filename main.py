@@ -9,8 +9,9 @@ pygame.display.set_icon(pygame.image.load(os.path.join("Assets", "spiffo.png")))
 FPS = 60
 HEART = pygame.image.load(os.path.join("Assets", "heart.png"))
 HEART_EMPTY = pygame.image.load(os.path.join("Assets", "heart_empty.png"))
+HEART_HALF = pygame.image.load(os.path.join("Assets", "heart_half.png"))
 hearts = [(HEART, (360, 400)), (HEART, (390, 400)), (HEART, (420, 400)), 
-          (HEART, (450, 400)), (HEART, (480, 400))]
+          (HEART_HALF, (450, 400)), (HEART_EMPTY, (480, 400))]
 
 def draw_window():
     WIN.fill((0, 0, 0))
