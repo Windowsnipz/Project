@@ -2,6 +2,8 @@ import sys
 import random
 import time
 
+import pygame
+
 # Character object
 class Character:
     def __init__(self, name):
