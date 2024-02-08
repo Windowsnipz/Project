@@ -7,12 +7,15 @@ pygame.display.set_caption("Zomboid: Rosewood Rising")
 pygame.display.set_icon(pygame.image.load(os.path.join("Assets", "spiffo.png")))
 
 FPS = 60
+HEART_WIDTH, HEART_HEIGHT = 40, 40
+
 HEART = pygame.image.load(os.path.join("Assets", "heart.png"))
 HEART_EMPTY = pygame.image.load(os.path.join("Assets", "heart_empty.png"))
 HEART_HALF = pygame.image.load(os.path.join("Assets", "heart_half.png"))
-hearts = [(HEART, (360, 400)), (HEART, (390, 400)), (HEART, (420, 400)), 
-          (HEART, (450, 400)), (HEART, (480, 400))]
-health = 10
+
+hearts = [(HEART, (350, 400)), (HEART, (380, 400)), (HEART, (410, 400)), 
+          (HEART, (440, 400)), (HEART, (470, 400))]
+health = 7
 
 # Update the hearts based on the health
 def get_hearts(health):
