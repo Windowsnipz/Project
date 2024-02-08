@@ -16,29 +16,6 @@ pygame.display.set_icon(pygame.image.load(os.path.join("Assets", "spiffo.png")))
 text_font = pygame.font.SysFont("Calibri", 20, bold=True)
 
 FPS = 60
-HEART_WIDTH, HEART_HEIGHT = 40, 40
-
-HEART = pygame.image.load(os.path.join("Assets", "heart.png"))
-HEART_EMPTY = pygame.image.load(os.path.join("Assets", "heart_empty.png"))
-HEART_HALF = pygame.image.load(os.path.join("Assets", "heart_half.png"))
-
-hearts = [(HEART, (350, 400)), (HEART, (380, 400)), (HEART, (410, 400)), 
-          (HEART, (440, 400)), (HEART, (470, 400))]
-health = 10
-
-# Update the hearts based on the health
-def get_hearts(health):
-    hearts = []
-    for i in range(5):
-        x = 360 + (30 * i) # x position
-        y = 400
-        if health > i * 2 + 1:
-            hearts.append((HEART, (x, y)))
-        elif health > i * 2:
-            hearts.append((HEART_HALF, (x, y)))
-        else:
-            hearts.append((HEART_EMPTY, (x, y)))
-    return hearts
     
 # Draw the text on the window
 def draw_text(text, font, color, x, y):
@@ -50,10 +27,6 @@ def draw_text(text, font, color, x, y):
 
 def draw_window():
     WIN.fill((0, 0, 0))
-    hearts = get_hearts(health)
-    for heart, pos in hearts:
-        WIN.blit(heart, pos)
-
 
 def main():
     clock = pygame.time.Clock()
