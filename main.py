@@ -8,6 +8,7 @@ pygame.init()
 
 # Set the display
 SCREEN_WIDTH, SCREEN_HEIGHT = 900, 500
+TEXT_SURFACE_WIDTH, TEXT_SURFACE_HEIGHT = int(SCREEN_WIDTH * 0.8), int(SCREEN_HEIGHT * 0.6)
 WIN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Zomboid: Rosewood Rising")
 pygame.display.set_icon(pygame.image.load(os.path.join("Assets", "spiffo.png")))
@@ -47,26 +48,36 @@ def title_screen():
             if event.type == pygame.KEYDOWN:
                 waiting = False
 
-def draw_window():
+def draw_window(text_surface, text_surface_x, text_surface_y):
     WIN.fill((0, 0, 0))
+    WIN.blit(text_surface, (text_surface_x, text_surface_y))
+    text_surface.fill((0, 255, 255))
+    
+
+    pygame.display.update()
 
 
 def main():
     clock = pygame.time.Clock()
 
+    # Creates a surface to draw text on
+    text_surface = pygame.Surface((TEXT_SURFACE_WIDTH, TEXT_SURFACE_HEIGHT))
+    # Calculate position to center text surface
+    text_surface_x = (SCREEN_WIDTH - TEXT_SURFACE_WIDTH) // 2
+    text_surface_y = (SCREEN_HEIGHT - TEXT_SURFACE_HEIGHT) // 2
+
     run = True
     while run:
-
         clock.tick(FPS)
+
         for event in pygame.event.get():
+
             if event.type == pygame.QUIT:
                 run = False
         
-        draw_window()
-        pygame.display.update()
+        draw_window(text_surface, text_surface_x, text_surface_y)
     
     pygame.quit()
-    sys.exit()
 
 if __name__ == "__main__":
     main()
