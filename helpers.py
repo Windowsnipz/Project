@@ -3,6 +3,12 @@ import random
 import time
 
 import pygame
+pygame.init()
+
+# Sets the game font (?)
+font = pygame.font.SysFont("Times New Roman", 20, bold=False)
+
+WHITE = (255, 255, 255)
 
 # Character object
 class Character:
@@ -89,9 +95,4 @@ def printcool_old(text):
         print(c, flush=True, end="")
         time.sleep(0.05)
     print()
-
-# Function to display text with animation
-def printcool(text, text_surface):
-    text_rendered = font.render(text, 1, WHITE)
-    text_surface.blit(text_rendered, (10, 10))
 
