@@ -25,8 +25,6 @@ WHITE = (255, 255, 255)
 RED = (100, 0, 0)
 
 # Function to display text with animation
-def printcool(text)::
-
 
 
 def draw_window(text_surface, text_surface_x, text_surface_y):
