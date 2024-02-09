@@ -59,21 +59,16 @@ def main():
     run = True
     while run:
 
-
         clock.tick(FPS)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-            
-
         
         draw_window()
         pygame.display.update()
     
-    
     pygame.quit()
     sys.exit()
-
 
 if __name__ == "__main__":
     main()
