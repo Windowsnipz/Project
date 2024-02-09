@@ -51,7 +51,7 @@ def title_screen():
 def draw_window(text_surface, text_surface_x, text_surface_y):
     WIN.fill((0, 0, 0))
     WIN.blit(text_surface, (text_surface_x, text_surface_y))
-    text_surface.fill((0, 255, 255))
+    text_surface.fill((255, 0, 0))
     
 
     pygame.display.update()
