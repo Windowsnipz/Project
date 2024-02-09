@@ -14,7 +14,7 @@ pygame.display.set_caption("Zomboid: Rosewood Rising")
 pygame.display.set_icon(pygame.image.load(os.path.join("Assets", "spiffo.png")))
 
 # Sets the game font (?)
-font = pygame.font.SysFont("Calibri", 20, bold=True)
+font = pygame.font.SysFont("Times New Roman", 20, bold=True)
 
 # Set the frames per second
 FPS = 60
@@ -22,15 +22,21 @@ FPS = 60
 # DEFINE COLORS
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
-RED = (255, 0, 0)
+RED = (100, 0, 0)
 
 # Draw the text on the text_surface
 def printcool(text, text_surface, delay=0.05):
     text_surface.fill(RED)  # Clear the text surface
-    text_rendered = font.render(text, True, WHITE)  # Render the text
-    text_surface.blit(text_rendered, (10, 10))  # Draw the text on the text surface
-    pygame.display.update()  # Update the display
-    time.sleep(delay)  # Delay for a specified time
+    x, y = 0, 0  # Initialize blitting position
+    next_char_time = pygame.time.get_ticks() + delay * 1000  # Calculate time for the next character
+    for char in text:
+        if pygame.time.get_ticks() >= next_char_time:
+            text_render = font.render(char, True, WHITE)
+            text_surface.blit(text_render, (x, y))  # Blit at the current position
+            x += text_render.get_width() + 1  # Increment x position
+            next_char_time = pygame.time.get_ticks() + delay * 1000  # Update time for the next character
+            pygame.display.update()  # Update the display after rendering each character
+
     
 
 def title_screen():
@@ -51,13 +57,9 @@ def title_screen():
                 waiting = False
 
 def draw_window(text_surface, text_surface_x, text_surface_y):
-    WIN.fill((0, 0, 0))
+    WIN.fill((BLACK))
     WIN.blit(text_surface, (text_surface_x, text_surface_y))
-    text_surface.fill((255, 0, 0))
-
-    printcool("Zomboid: Rosewood Rising", text_surface)
-    
-
+    text_surface.fill(RED)
     pygame.display.update()
 
 
@@ -80,7 +82,10 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
         
+        printcool("Zomboid: Rosewood Rising", text_surface)
+
         draw_window(text_surface, text_surface_x, text_surface_y)
+
     
     pygame.quit()
 
