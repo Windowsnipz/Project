@@ -22,14 +22,16 @@ FPS = 60
 # DEFINE COLORS
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
+RED = (255, 0, 0)
 
-# Draw the text on the window
-def printcool(text, delay=0.05):
-    for i, char in enumerate(text):
-        text_surface = font.render(char, True, WHITE)
-        WIN.blit(text_surface, (50 + i * 10, 50))
-        pygame.display.flip()
-        time.sleep(delay)
+# Draw the text on the text_surface
+def printcool(text, text_surface, delay=0.05):
+    text_surface.fill(RED)  # Clear the text surface
+    text_rendered = font.render(text, True, WHITE)  # Render the text
+    text_surface.blit(text_rendered, (10, 10))  # Draw the text on the text surface
+    pygame.display.update()  # Update the display
+    time.sleep(delay)  # Delay for a specified time
+    
 
 def title_screen():
     WIN.fill(BLACK)
@@ -52,6 +54,8 @@ def draw_window(text_surface, text_surface_x, text_surface_y):
     WIN.fill((0, 0, 0))
     WIN.blit(text_surface, (text_surface_x, text_surface_y))
     text_surface.fill((255, 0, 0))
+
+    printcool("Zomboid: Rosewood Rising", text_surface)
     
 
     pygame.display.update()
@@ -65,6 +69,7 @@ def main():
     # Calculate position to center text surface
     text_surface_x = (SCREEN_WIDTH - TEXT_SURFACE_WIDTH) // 2
     text_surface_y = (SCREEN_HEIGHT - TEXT_SURFACE_HEIGHT) // 2
+
 
     run = True
     while run:
