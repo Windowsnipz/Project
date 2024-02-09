@@ -50,11 +50,9 @@ def title_screen():
 def draw_window():
     WIN.fill((0, 0, 0))
 
+
 def main():
     clock = pygame.time.Clock()
-    title_screen()
-    printcool("Welcome to Zomboid: Rosewood Rising")
-    printcool("A text-based RPG based on the game Project Zomboid!")
 
     run = True
     while run:
