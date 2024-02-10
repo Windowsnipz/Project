@@ -32,11 +32,11 @@ def print_text(text, color=WHITE):
     img = font.render(text, True, color) #Text images
     text_surface.blit(img, (x, y))
     WIN.blit(text_surface, (TEXT_SURFACE_X, TEXT_SURFACE_Y))
+    pygame.display.update()
 
 def title_screen():
     WIN.fill(BLACK)
     print_text("                       Press any key to start", color=WHITE)
-    pygame.display.update()
     
     waiting = True
     while waiting:
