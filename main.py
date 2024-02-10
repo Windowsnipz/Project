@@ -24,8 +24,6 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (100, 0, 0)
 
-# Function to display text with animation
-
 
 def draw_window(text_surface, text_surface_x, text_surface_y):
     WIN.fill((BLACK))
@@ -52,7 +50,6 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
         
-        printcool("Zomboid: Rosewood Rising", text_surface)
         draw_window(text_surface, text_surface_x, text_surface_y)
 
     
