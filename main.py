@@ -22,7 +22,6 @@ FPS = 60
 # DEFINE COLORS
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
-RED = (100, 0, 0)
 
 
 def draw_window():
