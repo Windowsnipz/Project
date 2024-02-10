@@ -39,8 +39,10 @@ def main():
                 run = False
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
+                    ...
                     # TODO: Add a pause menu      
                 elif event.key == pygame.K_KP_ENTER:
+                    ...
                     # TODO: Speed up text output
         
         pygame.display.update()
