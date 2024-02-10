@@ -25,21 +25,13 @@ WHITE = (255, 255, 255)
 RED = (100, 0, 0)
 
 
-def draw_window(text_surface, text_surface_x, text_surface_y):
+def draw_window():
     WIN.fill((BLACK))
-    WIN.blit(text_surface, (text_surface_x, text_surface_y))
     pygame.display.update()
 
 
 def main():
     clock = pygame.time.Clock()
-
-    # Creates a surface to draw text on
-    text_surface = pygame.Surface((TEXT_SURFACE_WIDTH, TEXT_SURFACE_HEIGHT))
-    # Calculate position to center text surface
-    text_surface_x = (SCREEN_WIDTH - TEXT_SURFACE_WIDTH) // 2
-    text_surface_y = (SCREEN_HEIGHT - TEXT_SURFACE_HEIGHT) // 2
-
 
     run = True
     while run:
@@ -50,7 +42,7 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
         
-        draw_window(text_surface, text_surface_x, text_surface_y)
+        draw_window()
 
     
     pygame.quit()
