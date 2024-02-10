@@ -27,12 +27,30 @@ FPS = 60
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
+
 def print_text(text, color=WHITE):
     x, y = 0, 0
-    img = font.render(text, True, color) #Text images
-    text_surface.blit(img, (x, y))
+    img = font.render(text, True, color)  # Text image
+
+    # Check if the text exceeds the width of the text_surface
+    if img.get_width() > TEXT_SURFACE_WIDTH:
+        words = text.split(' ')
+        new_text = ''
+        line = ''
+        for word in words:
+            if font.size(line + word)[0] <= TEXT_SURFACE_WIDTH:
+                line += word + ' '
+            else:
+                new_text += line + '\n'
+                line = word + ' '
+        new_text += line
+        img = font.render(new_text, True, color)
+
+    text_surface.fill(BLACK)  # Clear the text_surface
+    text_surface.blit(img, (x, y))  # Render the wrapped text on the text_surface
     WIN.blit(text_surface, (TEXT_SURFACE_X, TEXT_SURFACE_Y))
     pygame.display.update()
+
 
 def title_screen():
     WIN.fill(BLACK)
@@ -58,7 +76,7 @@ def main():
     run = True
     while run:
         clock.tick(FPS)
-        print_text("Hello, World!")
+        print_text("Hello, World, I am about to write a very long sentence to see if line wrapping is correctly implemented. It was not!")
 
         for event in pygame.event.get():
 
