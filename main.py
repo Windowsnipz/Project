@@ -28,15 +28,16 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
 def print_text(text, color=WHITE):
-    x, y = 50, 50
+    x, y = 0, 0
     img = font.render(text, True, color) #Text images
     text_surface.blit(img, (x, y))
     WIN.blit(text_surface, (TEXT_SURFACE_X, TEXT_SURFACE_Y))
 
 def title_screen():
     WIN.fill(BLACK)
-    print_text("Press any key to start", color=WHITE)
+    print_text("                       Press any key to start", color=WHITE)
     pygame.display.update()
+    
     waiting = True
     while waiting:
         clock.tick(FPS)
@@ -45,15 +46,18 @@ def title_screen():
                 pygame.quit()
                 sys.exit()
             if event.type == pygame.KEYDOWN:
+                text_surface.fill(BLACK)
+                pygame.display.update()
                 waiting = False
 
 
 def main():
+    title_screen()
+
 
     run = True
     while run:
         clock.tick(FPS)
-
         print_text("Hello, World!")
 
         for event in pygame.event.get():
