@@ -24,10 +24,6 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
 
-def draw_window():
-    WIN.fill((BLACK))
-    pygame.display.update()
-
 
 def main():
     clock = pygame.time.Clock()
@@ -36,12 +32,18 @@ def main():
     while run:
         clock.tick(FPS)
 
+
         for event in pygame.event.get():
 
             if event.type == pygame.QUIT:
                 run = False
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    # TODO: Add a pause menu      
+                elif event.key == pygame.K_KP_ENTER:
+                    # TODO: Speed up text output
         
-        draw_window()
+        pygame.display.update()
 
     
     pygame.quit()
