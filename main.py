@@ -14,7 +14,7 @@ pygame.display.set_caption("Zomboid: Rosewood Rising")
 pygame.display.set_icon(pygame.image.load(os.path.join("Assets", "spiffo.png")))
 
 # Sets the game font (?)
-font = pygame.font.SysFont("Times New Roman", 20, bold=False)
+font = pygame.font.SysFont("mspgothic", 20)
 
 # Set the frames per second
 FPS = 60
@@ -23,7 +23,10 @@ FPS = 60
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
-
+def print_text(text, color=WHITE):
+    x, y = 50, 50
+    text_surface = font.render(text, True, color)
+    WIN.blit(text_surface, (x, y))
 
 def main():
     clock = pygame.time.Clock()
@@ -32,6 +35,7 @@ def main():
     while run:
         clock.tick(FPS)
 
+        print_text("Zomboid: Rosewood Rising", WHITE)
 
         for event in pygame.event.get():
 
