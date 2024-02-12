@@ -2,8 +2,6 @@ import sys
 import random
 import time
 
-import pygame
-pygame.init()
 
 # Sets the game font (?)
 font = pygame.font.SysFont("Times New Roman", 20, bold=False)
