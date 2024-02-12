@@ -2,12 +2,6 @@ import sys
 import random
 import time
 
-
-# Sets the game font (?)
-font = pygame.font.SysFont("Times New Roman", 20, bold=False)
-
-WHITE = (255, 255, 255)
-
 # Character object
 class Character:
     def __init__(self, name):
