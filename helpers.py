@@ -90,7 +90,7 @@ def printgloom(text):
 
 
 # Prints out text in a cool, game-like format. Flush required to work.
-def printcool_old(text):
+def printcool(text):
     for c in text:
         print(c, flush=True, end="")
         time.sleep(0.05)
