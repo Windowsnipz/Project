@@ -7,7 +7,6 @@ def path1():
 
     protagonist = get_character_name()
 
-    time.sleep(1.1)
     printcool(f"{protagonist.name} finds themself awake, in the dim spare bedroom of their parent's apartment.", "Upon getting out of bed, they examine their surroundings.")
     wait()
     printcool("placeholder blah blah blah\n\n")

@@ -67,6 +67,7 @@ def get_character_name():
     printcool("What is the name of your lonely survivor?", end=None)
     name = input()
     printcool("\n+--------------------------------------------+", end=None, delay=0.01)
+    time.sleep(1.1)
     name = name.title()
 
     # Establish the protagonist as a Character object
@@ -105,4 +106,5 @@ def printcool(text, text2="", end="+--------------------------------------------
             print(c, flush=True, end="")
             time.sleep(0.01)
         print()
+        time.sleep(1.1)
 
