@@ -96,6 +96,7 @@ def printcool(text, text2="", end="+--------------------------------------------
         for c in text2:
             print(c, flush=True, end="")
             time.sleep(delay)
+        time.sleep(middle_delay)
         print()
     if end == None:
         print()
