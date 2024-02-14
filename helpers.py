@@ -52,7 +52,7 @@ def yayornay(response):
 
 # Starts.... the game
 def start_game():
-    printcool("Would you like to start the game?\n")
+    printcool("Would you like to start the game?", end=None)
     start = input()
     if start.lower() == "y" or start.lower() == "yes":
         print()
@@ -62,8 +62,10 @@ def start_game():
 
 # Gets character name and returns a character object
 def get_character_name():
-    printcool("What is the name of your lonely survivor?\n")
+    printcool("+--------------------------------------------+", end=None, delay=0.01)
+    printcool("What is the name of your lonely survivor?", end=None)
     name = input()
+    printcool("\n+--------------------------------------------+", end=None, delay=0.01)
     name = name.title()
 
     # Establish the protagonist as a Character object
@@ -82,9 +84,22 @@ def printgloom(text):
 
 
 # Prints out text in a cool, game-like format. Flush required to work.
-def printcool(text):
+def printcool(text, text2="", end="+--------------------------------------------+", delay=0.05):
     for c in text:
         print(c, flush=True, end="")
-        time.sleep(0.05)
+        time.sleep(delay)
     print()
+    if text2 != "":
+        for c in text2:
+            print(c, flush=True, end="")
+            time.sleep(delay)
+        print()
+    if end == None:
+        print()
+        return
+    else:
+        for c in end:
+            print(c, flush=True, end="")
+            time.sleep(0.01)
+        print()
 
