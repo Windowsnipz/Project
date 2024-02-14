@@ -46,6 +46,7 @@ def random_weapon():
 
 # Returns a bool based on a y or n question for player
 def yayornay(response):
+    print()
     if response.lower() == "y" or response.lower() == "yes":
         return True
     return False
