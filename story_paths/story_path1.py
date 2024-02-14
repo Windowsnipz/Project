@@ -22,9 +22,9 @@ def path1():
     printcool("While coming down the stairs, all seems eerily quiet...", "Overcast weather was evident through the pale curtains of the living room windows.")
     
     printcool("However...", "The atmosphere was not the only thing that carried a pale demeanor.")
+
+    printcool(f"Lying fetal under the coffee table was {protagonist.name}'s daughter, Emily.", "Softly call Emily's name, or sneak away?")
     
-    printcool(f"Lying fetal under the coffee table was {protagonist.name}'s daughter, Emily."), wait()
-    printcool(f"Softly call Emily's name, or sneak away?\n")
     choice = input()
     print(), wait()
     if "call" in choice:
