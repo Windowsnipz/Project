@@ -1,5 +1,3 @@
-import time
-
 from helpers import Character, printcool, wait, yayornay, get_character_name, random_weapon, printgloom
 
 # Defining story path 1
