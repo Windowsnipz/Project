@@ -30,9 +30,9 @@ def main():
 # Title screen/menu of the game where you start
 def title_screen():
     # Welcome message
-    printcool("+------------------+\n\n")
-    printcool("Welcome to Project Zombois,\na text-based adventure game based on the game Project Zomboid!\n\n")
-    printcool("+------------------+\n\n\n")
+    printcool("+--------------------------------------------+\n\n")
+    printcool("Welcome to Zomboid: Rosewood Rising,\na story-based rpg based on Project Zomboid!\n\n")
+    printcool("+--------------------------------------------+\n\n\n")
 
     if not start_game():
         sys.exit(1)

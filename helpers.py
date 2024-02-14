@@ -62,7 +62,7 @@ def start_game():
 
 # Gets character name and returns a character object
 def get_character_name():
-    printcool("What is the name of your lonely survivor?")
+    printcool("What is the name of your lonely survivor?\n")
     name = input()
     name = name.title()
 
