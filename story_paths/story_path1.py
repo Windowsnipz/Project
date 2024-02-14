@@ -19,8 +19,8 @@ def path1():
     else:
         printcool(f"{protagonist.name} decides to leave the {spawn_weapon.name} as is, and move on.")
     
-    printcool("While coming down the stairs, all seems eerily quiet...")
-    printcool(f"Overcast weather was evident through the pale curtains of the living room windows.\n"), wait()
+    printcool("While coming down the stairs, all seems eerily quiet...", "Overcast weather was evident through the pale curtains of the living room windows.")
+    
     printcool("However..."), wait(), printcool("The atmosphere was not the only thing that carried a pale demeanor.\n"), wait()
     printcool(f"Lying fetal under the coffee table was {protagonist.name}'s daughter, Emily."), wait()
     printcool(f"Softly call Emily's name, or sneak away?\n")
