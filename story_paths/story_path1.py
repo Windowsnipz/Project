@@ -10,10 +10,9 @@ def path1():
     #Spawn random weapon
     spawn_weapon = random_weapon()
 
-    printcool(f"{protagonist.name} sees a {spawn_weapon.name} lying on top of the chestnut dresser.\n")
-    wait()
-    printcool(f"Pick the {spawn_weapon.name} up?\n")
+    printcool(f"{protagonist.name} sees a {spawn_weapon.name} lying on top of the chestnut dresser.", f"Pick the {spawn_weapon.name} up?")
     choice = input()
+    
     print()
     wait()
     if yayornay(choice):
