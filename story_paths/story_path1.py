@@ -28,9 +28,10 @@ def path1():
     choice = input(), print(), wait()
     
     if "call" in choice:
-        printgloom("\"..."), wait(), printcool("Emily\""), wait()
-        printcool(f"Rolling to face {protagonist.name}, Emily's face bore tears.\n"), wait()
-        printcool("\"Something feels wrong,\" she whimpered.\n"), wait()
+        printgloom("\"..."), printcool("Emily\"")
+
+        printcool(f"Rolling to face {protagonist.name}, Emily's face bore tears.", "\"Something feels wrong,\" she whimpered.")
+
         printcool(f"\"How long have I been asleep?\" asked {protagonist.name}."), wait()
         printcool("Emily turned her eyes away, staring up at the bottom of the coffee table as if it were the ceiling."), wait()
         printcool(f"The tears pooling in her eyes carried answers that {protagonist.name} was not getting.\n"), wait()
