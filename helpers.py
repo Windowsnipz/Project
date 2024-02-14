@@ -85,12 +85,13 @@ def printgloom(text):
 
 
 # Prints out text in a cool, game-like format. Flush required to work.
-def printcool(text, text2="", end="+--------------------------------------------+", delay=0.05):
+def printcool(text, text2="", end="+--------------------------------------------+", delay=0.05, middle_delay=1.1):
     for c in text:
         print(c, flush=True, end="")
         time.sleep(delay)
     print()
     if text2 != "":
+        time.sleep(middle_delay)
         for c in text2:
             print(c, flush=True, end="")
             time.sleep(delay)
@@ -99,6 +100,7 @@ def printcool(text, text2="", end="+--------------------------------------------
         print()
         return
     else:
+        print()
         for c in end:
             print(c, flush=True, end="")
             time.sleep(0.01)

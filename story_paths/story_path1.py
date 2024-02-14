@@ -5,11 +5,11 @@ def path1():
 
     protagonist = get_character_name()
 
-    print("\n")
+    print()
     wait()
-    printcool(f"{protagonist.name} finds themself awake, in the dim spare bedroom of their parent's apartment.")
+    printcool(f"{protagonist.name} finds themself awake, in the dim spare bedroom of their parent's apartment.", "Upon getting out of bed, they examine their surroundings.")
     wait()
-    printcool("Upon getting out of bed, they examine their surroundings.\n\n")
+    printcool("placeholder blah blah blah\n\n")
     wait()
 
     #Spawn random weapon
