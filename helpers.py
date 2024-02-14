@@ -61,6 +61,7 @@ def start_game():
 
 
 # Gets character name and returns a character object
+            #TODO - Add a check for the name to make sure it's not empty, or too long
 def get_character_name():
     printcool("+--------------------------------------------+", end=None, delay=0.01)
     printcool("What is the name of your lonely survivor?", end=None)
