@@ -25,7 +25,7 @@ def path1():
 
     printcool(f"Lying fetal under the coffee table was {protagonist.name}'s daughter, Emily.", "Softly call Emily's name, or sneak away?")
 
-    choice = input()
+    choice = input(), print(), wait()
     
     if "call" in choice:
         printgloom("\"..."), wait(), printcool("Emily\""), wait()
