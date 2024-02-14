@@ -12,16 +12,14 @@ def path1():
 
     printcool(f"{protagonist.name} sees a {spawn_weapon.name} lying on top of the chestnut dresser.", f"Pick the {spawn_weapon.name} up?")
     choice = input()
-    
-    print()
-    wait()
+
     if yayornay(choice):
-        printcool(f"{protagonist.name} decides to pick up the {spawn_weapon.name} and wield tightly, as if it were important.\n")
+        printcool(f"{protagonist.name} decides to pick up the {spawn_weapon.name} and wield tightly, as if it were important.")
         protagonist.weapon = spawn_weapon
     else:
-        printcool(f"{protagonist.name} decides to leave the {spawn_weapon.name} as is, and move on.\n")
-    wait()
-    printcool(f"While coming down the stairs, all seems eerily quiet..."), wait()
+        printcool(f"{protagonist.name} decides to leave the {spawn_weapon.name} as is, and move on.")
+    
+    printcool("While coming down the stairs, all seems eerily quiet...")
     printcool(f"Overcast weather was evident through the pale curtains of the living room windows.\n"), wait()
     printcool("However..."), wait(), printcool("The atmosphere was not the only thing that carried a pale demeanor.\n"), wait()
     printcool(f"Lying fetal under the coffee table was {protagonist.name}'s daughter, Emily."), wait()
