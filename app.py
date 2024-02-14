@@ -33,7 +33,6 @@ def title_screen():
     print()
     printcool("+--------------------------------------------+", end=None, delay=0.01)
     printcool("Welcome to Zomboid: Rosewood Rising,", "a story-based rpg based on Project Zomboid!", middle_delay=0)
-    print()
 
     if not start_game():
         sys.exit(1)

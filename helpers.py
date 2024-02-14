@@ -106,6 +106,6 @@ def printcool(text, text2="", end="+--------------------------------------------
         for c in end:
             print(c, flush=True, end="")
             time.sleep(0.01)
-        print()
+        print("\n")
         time.sleep(1.1)
 
