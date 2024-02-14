@@ -65,7 +65,7 @@ def start_game():
             #TODO - Add a check for the name to make sure it's not empty, or too long
 def get_character_name():
     printcool("+--------------------------------------------+", end=None, delay=0.01)
-    printcool("What is the name of your lonely survivor?", end=None)
+    printcool("What is the name of your survivor?", end=None)
     name = input()
     printcool("\n+--------------------------------------------+", end=None, delay=0.01)
     time.sleep(1.1)
