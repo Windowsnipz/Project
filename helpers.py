@@ -110,3 +110,7 @@ def printcool(text, text2="", end="+--------------------------------------------
         print("\n")
         time.sleep(1.1)
 
+# Gets input from the user, validates it. Is customizable for different types of input.
+def get_input(text, type=""):
+    if type == "":
+        ... #TODO - validate input
