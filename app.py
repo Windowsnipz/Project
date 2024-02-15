@@ -6,7 +6,7 @@ import sys
 
 
 from helpers import printcool, start_game
-from story_paths.story_path1 import path1
+from story_paths.path1 import path1
 
 
 
