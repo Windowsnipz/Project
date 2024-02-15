@@ -25,9 +25,10 @@ def path1():
 
     printcool(f"Lying fetal under the coffee table was {protagonist.name}'s daughter, Emily.", "Softly call Emily's name, or sneak away?")
 
-    choice = get_input()
+    # get_input() returns a boolean value
+    choice = get_input("call")
     
-    if "call" in choice:
+    if choice:
         printgloom("\"..."), printcool("Emily\"")
 
         printcool(f"Rolling to face {protagonist.name}, Emily's face bore tears.", "\"Something feels wrong,\" she whimpered.")

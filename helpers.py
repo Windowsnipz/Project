@@ -111,10 +111,14 @@ def printcool(text, text2="", end="+--------------------------------------------
         time.sleep(1.1)
 
 # Gets input from the user, validates it. Is customizable for different types of input.
-def get_input(text, type=""):
+# TODO: Add a check for the input to make sure it's not empty.
+def get_input(keyword, type=""):
     if type == "":
-        ... #TODO - validate input
-
+        choice = input().lower()
+        words = choice.split()
+        if keyword.lower() in words:
+            print()
+            time.sleep(1.5)
+            return True
+        return False 
     
-    print()
-    time.sleep(1.5)
