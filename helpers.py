@@ -44,13 +44,6 @@ def random_weapon():
         return weapon
 
 
-# Returns a bool based on a y or n question for player
-def yayornay(response):
-    print()
-    if response.lower() == "y" or response.lower() == "yes":
-        return True
-    return False
-
 # Starts.... the game
 def start_game():
     printcool("Would you like to start the game?", end=None)
