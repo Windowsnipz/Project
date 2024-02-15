@@ -1,4 +1,4 @@
-from helpers import Character, printcool, wait, yayornay, get_character_name, random_weapon, printgloom
+from helpers import Character, printcool, wait, yayornay, get_character_name, random_weapon, printgloom, get_input
 
 # Defining story path 1
 def path1():
@@ -25,7 +25,7 @@ def path1():
 
     printcool(f"Lying fetal under the coffee table was {protagonist.name}'s daughter, Emily.", "Softly call Emily's name, or sneak away?")
 
-    choice = input(), print(), wait()
+    choice = get_input()
     
     if "call" in choice:
         printgloom("\"..."), printcool("Emily\"")
