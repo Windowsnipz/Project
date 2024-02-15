@@ -32,11 +32,11 @@ def path1():
 
         printcool(f"Rolling to face {protagonist.name}, Emily's face bore tears.", "\"Something feels wrong,\" she whimpered.")
 
-        printcool(f"\"How long have I been asleep?\" asked {protagonist.name}."), wait()
-        printcool("Emily turned her eyes away, staring up at the bottom of the coffee table as if it were the ceiling."), wait()
-        printcool(f"The tears pooling in her eyes carried answers that {protagonist.name} was not getting.\n"), wait()
-        printcool("Emily starts to emerge from under the coffee table."), wait()
-        printcool("Offer to hold her, or do nothing?\n")
+        printcool(f"\"How long have I been asleep?\" asked {protagonist.name}.", "Emily turned her eyes away, staring up at the bottom of the coffee table as if it were the ceiling.")
+
+        printcool(f"The tears pooling in her eyes carried answers that {protagonist.name} was not getting.")
+
+        printcool("Emily starts to emerge from under the coffee table.", "Offer to hold her, or do nothing?")
         subchoice = input()
         print(), wait()
         if "hold" in subchoice:
