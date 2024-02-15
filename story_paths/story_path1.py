@@ -52,6 +52,6 @@ def path1():
 
 
     else:
-        printcool(f"{protagonist.name} slips away, with an ominous feeling hanging about when they approach the kitchen.\n"), wait()
-        printcool("Looking out of the window above the sink, it looked as gray as you would imagine."), wait()
-        printcool("A very light fog accompanied the cloudy day, covering the suburban neighborhood.\n"), wait()
+        printcool(f"{protagonist.name} slips away, with an ominous feeling hanging about when they approach the kitchen.")
+
+        printcool("Looking out of the window above the sink, it looked as gray as you would imagine.", "A very light fog accompanied the cloudy day, covering the suburban neighborhood.")
