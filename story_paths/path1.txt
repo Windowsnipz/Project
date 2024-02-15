@@ -1,4 +1,4 @@
-protag.name finds themself awake in the dim spare bedroom of their house.
+protag.name finds themself awake in the dim spare bedroom of their Kentucky home.
 Upon getting out of bed, they examine their surroundings.
 protag.name sees a spawn_weapon lying on top of the chestnut dresser.
 Pick the spawn_weapon up?
@@ -26,7 +26,7 @@ Softly call Emily's name, or sneak away?
         Offer to hold her, or do nothing?
             if hold:
                 "Come here, Em. Let's go outside."
-                Holding Emily in their arms, protag.name makes their way to the front door of their Kentucky home.
+                Holding Emily in their arms, protag.name makes their way to the front door of their house.
                 Upon opening the door, they go outside.
             else:
                 Emily stands up, arms wrapped around her stomach as if she were in pain.
