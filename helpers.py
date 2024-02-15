@@ -55,7 +55,6 @@ def yayornay(response):
 def start_game():
     printcool("Would you like to start the game?", end=None)
     if get_input(type="bool"):
-        print()
         return True
     print()
     return False
@@ -127,6 +126,10 @@ def get_input(keyword="", type=""):
     if type == "bool":
         choice = input().lower()
         if choice == "y" or choice == "yes":
+            print()
+            time.sleep(1.5)
             return True
+        print()
+        time.sleep(1.5)
         return False
     

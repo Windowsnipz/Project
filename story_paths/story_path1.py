@@ -11,11 +11,12 @@ def path1():
     spawn_weapon = random_weapon()
 
     printcool(f"{protagonist.name} sees a {spawn_weapon.name} lying on top of the chestnut dresser.", f"Pick the {spawn_weapon.name} up?")
-    choice = input()
 
-    if yayornay(choice):
+    if get_input(type="bool"):
+
         printcool(f"{protagonist.name} decides to pick up the {spawn_weapon.name} and wield tightly, as if it were important.")
         protagonist.weapon = spawn_weapon
+        
     else:
         printcool(f"{protagonist.name} decides to leave the {spawn_weapon.name} as is, and move on.")
     
