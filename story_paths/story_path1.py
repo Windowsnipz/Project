@@ -1,4 +1,4 @@
-from helpers import Character, printcool, wait, yayornay, get_character_name, random_weapon, printgloom, get_input
+from helpers import printcool, yayornay, get_character_name, random_weapon, printgloom, get_input
 
 # Defining story path 1
 def path1():
