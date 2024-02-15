@@ -1,4 +1,4 @@
-from helpers import printcool, yayornay, get_character_name, random_weapon, printgloom, get_input
+from helpers import printcool, get_character_name, random_weapon, printgloom, get_input
 
 # Defining story path 1
 def path1():
@@ -16,7 +16,7 @@ def path1():
 
         printcool(f"{protagonist.name} decides to pick up the {spawn_weapon.name} and wield tightly, as if it were important.")
         protagonist.weapon = spawn_weapon
-        
+
     else:
         printcool(f"{protagonist.name} decides to leave the {spawn_weapon.name} as is, and move on.")
     
