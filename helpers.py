@@ -54,10 +54,10 @@ def yayornay(response):
 # Starts.... the game
 def start_game():
     printcool("Would you like to start the game?", end=None)
-    start = input()
-    if start.lower() == "y" or start.lower() == "yes":
+    if get_input(type="bool"):
         print()
         return True
+    print()
     return False
 
 
@@ -112,7 +112,7 @@ def printcool(text, text2="", end="+--------------------------------------------
 
 # Gets input from the user, validates it. Is customizable for different types of input.
 # TODO: Add a check for the input to make sure it's not empty.
-def get_input(keyword, type=""):
+def get_input(keyword="", type=""):
     if type == "":
         choice = input().lower()
         words = choice.split()
@@ -123,5 +123,10 @@ def get_input(keyword, type=""):
         else:
             print()
             time.sleep(1.5)
-            return False 
+            return False
+    if type == "bool":
+        choice = input().lower()
+        if choice == "y" or choice == "yes":
+            return True
+        return False
     
