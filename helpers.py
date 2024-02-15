@@ -114,3 +114,7 @@ def printcool(text, text2="", end="+--------------------------------------------
 def get_input(text, type=""):
     if type == "":
         ... #TODO - validate input
+
+    
+    print()
+    time.sleep(1.5)
