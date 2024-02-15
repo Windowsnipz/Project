@@ -120,5 +120,8 @@ def get_input(keyword, type=""):
             print()
             time.sleep(1.5)
             return True
-        return False 
+        else:
+            print()
+            time.sleep(1.5)
+            return False 
     
