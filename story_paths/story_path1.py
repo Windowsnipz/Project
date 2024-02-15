@@ -39,11 +39,11 @@ def path1():
         printcool("Emily starts to emerge from under the coffee table.", "Offer to hold her, or do nothing?")
 
         subchoice = input(), print(), wait()
-        
+
         if "hold" in subchoice:
-            printcool("\"Come here, Em. Let's go outside.\""), wait()
-            printcool(f"Holding Emily in their arms, {protagonist.name} makes their way to the front door of their Kentucky home."), wait()
-            printcool("Upon opening the door, they go outside.")
+            printcool("\"Come here, Em. Let's go outside.\"")
+
+            printcool(f"Holding Emily in their arms, {protagonist.name} makes their way to the front door of their Kentucky home.", "Upon opening the door, they go outside.")
         else:
             printcool("Emily stands up, arms wrapped around her stomach as if she were in pain."), wait()
             printcool("\"Something feels terrible\"\n"), wait()
