@@ -157,3 +157,4 @@ def emily_encounter2(protagonist):
         printcool(f"Running over to help Emily up, {protagonist.name} reaches out their hand.", "Emily looks up. Her eyes are bloodshot and glazed over.")
 
         printcool("\"EMI-\"", f"She enforces a tight grip on {protagonist.name}'s arm, and bits down hard.")
+        protagonist.hurty(emily.damage)
