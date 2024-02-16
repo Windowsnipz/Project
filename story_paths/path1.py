@@ -179,4 +179,56 @@ def emily_encounter2(protagonist):
                   printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")  
 
     else:
-        ... #TODO Emily stands up and attacks.
+        printcool(f"Emily lunges at {protagonist.name}, demonic sounds echoing from her throat.", "Defend yourself, or do nothing?")
+
+        defend = get_input("defend")
+
+        if defend:
+            if protagonist.weapon:
+
+                printcool(f"In an attempt of self-defense, {protagonist.name} brands the {protagonist.weapon.name}.")
+
+                printcool("Emily takes a strong blow to the torso, and falls to the ground.", f"{protagonist.name} screams of emotional pain.")
+                emily.hurty(protagonist.weapon.damage)
+
+                if emily.is_dead():
+                    printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
+
+                    printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+
+                else:
+                    printcool(f"The {protagonist.weapon.name} wasn't enough to halt Emily's objective.", f"Once again, she quickly stands up and continues to advance on {protagonist.name}.")
+
+                    printcool("Hit Emily again, or try to run away?")
+                    
+                    hit = get_input("hit")
+                    if hit:
+                        emily.hurty(protagonist.weapon.damage)
+                        printcool(f"This time, {protagonist.name} gives a swift blow to the head, and Emily topples over.", "She doesn't get back up.")
+
+                        printcool(f"She isn't moving, and her body lies still on the cold ground.")
+                        printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                    
+                    else:
+                        printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
+
+            else:
+                printcool(f"{protagonist.name} catches Emily by the shoulders, and shoves her to the ground", f"Grasping at her ankles, Emily takes a small bite out of {protagonist.name}'s foot.")
+                protagonist.hurty(emily.damage)
+
+                printcool(f"{protagonist.name} cries in pain, both emotional and physical.", "Defend yourself, or try to run away?")
+                defend = get_input("defend")
+
+                if defend:
+                    printcool(f"Closing their eyes, {protagonist.name} quickly gives a stomp to the head.")
+                    emily.hurty(50)
+
+                    printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
+
+                    printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+
+                else:
+                    printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
+        
+        else:
+            printcool(f"Shoving Emily to the ground, {protagonist.name} sprints a few houses down.", "They caught their breath on someone else's back porch.")
