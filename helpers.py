@@ -38,7 +38,7 @@ class Weapon:
 def random_weapon():
     num = random.randint(1,3)
     if num == 1:
-        weapon = Weapon("hammer", 20)
+        weapon = Weapon("hammer", 25)
         return weapon
     if num == 2:
         weapon = Weapon("kitchen knife", 40)
