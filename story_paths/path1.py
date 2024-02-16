@@ -31,8 +31,6 @@ def path1():
     
     if choice:
 
-        emily = True
-
         printgloom("\"..."), printcool("Emily\"")
 
         printcool(f"Rolling to face {protagonist.name}, Emily's face bore tears.", "\"Something feels wrong,\" she whimpered.")
