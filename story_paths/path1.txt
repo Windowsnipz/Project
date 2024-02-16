@@ -37,6 +37,19 @@ Softly call Emily's name, or sneak away?
         The heavy air instantly sent chills up {protagonist.name}'s spine.
         Something did not feel right with the setting...
 
+        if hold:
+            printcool("Suddenly, Emily's body went limp.", f"{protagonist.name} felt the weight shift, and lowered her to the ground.")
+            printcool("\"Emily!\"", "Something was wrong. Her body was unnaturally cold.")
+
+        else:
+            A sudden thud startled {progtagonist.name}.
+            Looking back, they saw Emily who'd just fallen to the ground, convulsing unconrallably.
+
+            "Emily!"
+            Indeed, something was horribly wrong.
+
+        (encounter1)
+
     if away:
         You slip away, with an ominous feeling hanging about when you find yourself in the kitchen. --protag.name
         Looking out of the window above the sink, it looked as gray as you would imagine.
@@ -44,3 +57,5 @@ Softly call Emily's name, or sneak away?
 
         Sneaking out of the front door, {protagonist.name} finds themself encapsulated in the gloomy weather.
         The heavy air sent chills up their spine.
+
+        (encounter2)

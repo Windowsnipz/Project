@@ -58,6 +58,18 @@ def path1():
 
         printcool(f"The heavy air instantly sent chills up {protagonist.name}'s spine", "Something did not feel right with the setting...")
 
+        if hold:
+            printcool("Suddenly, Emily's body went limp.", f"{protagonist.name} felt the weight shift, and lowered her to the ground.")
+
+            printcool("\"Emily!\"", "Something was wrong. Her body was unnaturally cold.")
+
+        else:
+            printcool(f"A sudden thud startled {protagonist.name}.", "Looking back, they saw Emily who'd just fallen to the ground, convulsing unconrallably.")
+
+            printcool(f"\"Emily!\"", "Indeed, something was horribly wrong.")
+
+        #TODO - Add emily encounter1
+
     else:
         printcool(f"{protagonist.name} slips away, with an ominous feeling hanging about when they approach the kitchen.")
 
