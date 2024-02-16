@@ -158,3 +158,15 @@ def emily_encounter2(protagonist):
 
         printcool("\"EMI-\"", f"She enforces a tight grip on {protagonist.name}'s arm, and bits down hard.")
         protagonist.hurty(emily.damage)
+
+        printcool(f"Screaming in pain and confusion, {protagonist.name} shoves Emily away.", "Defend yourself, or wait?")
+        defend = get_input("defend")
+
+        if defend:
+            ...
+        
+        else:
+            ...
+
+    else:
+        ...
