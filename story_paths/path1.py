@@ -76,3 +76,13 @@ def path1():
         printcool("Looking out of the window above the sink, it looked as gray as you would imagine.", "A very light fog accompanied the cloudy day, covering the suburban neighborhood.")
 
         printcool(f"Sneaking out of the front door, {protagonist.name} finds themself encapsulated in the gloomy weather.", "The heavy air sent chills up their spine.")
+
+
+
+
+
+
+def emily_encounter1(protagonist):
+    printcool("Suddenly, Emily looks up at the sky.", "Her eyes are bloodshot and glazed over.")
+
+    printcool("It all happened so fast.", f"She stood up so quickly, {protagonist.name} couldn't believe it.")
