@@ -60,3 +60,5 @@ def path1():
         printcool(f"{protagonist.name} slips away, with an ominous feeling hanging about when they approach the kitchen.")
 
         printcool("Looking out of the window above the sink, it looked as gray as you would imagine.", "A very light fog accompanied the cloudy day, covering the suburban neighborhood.")
+
+        printcool(f"Sneaking out of the front door, {protagonist.name} finds themself encapsulated in the gloomy weather.", "The heavy air sent chills up their spine.")
