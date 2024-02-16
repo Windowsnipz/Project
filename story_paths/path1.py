@@ -76,6 +76,8 @@ def path1():
 
         printcool(f"Sneaking out of the front door, {protagonist.name} finds themself encapsulated in the gloomy weather.", "The heavy air sent chills up their spine.")
 
+        emily_encounter2(protagonist)
+
 
 
 
@@ -142,3 +144,6 @@ def emily_encounter1(protagonist):
     else:
         printcool(f"Shoving Emily to the ground, {protagonist.name} sprints a few houses down.", "They caught their breath on someone else's back porch.")
         
+
+def emily_encounter2(protagonist):
+    ...
