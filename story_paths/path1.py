@@ -46,6 +46,7 @@ def path1():
         subchoice = get_input("hold")
 
         if subchoice:
+            hold = True
             printcool("\"Come here, Em. Let's go outside.\"")
 
             printcool(f"Holding Emily in their arms, {protagonist.name} makes their way to the front door of their house.", "Upon opening the door, they go outside.")
@@ -55,6 +56,7 @@ def path1():
 
             printcool(f"{protagonist.name} and Emily make their way to the front door of their Kentucky home, and walk outside.")
 
+        printcool(f"The heavy air instantly sent chills up {protagonist.name}'s spine", "Something did not feel right with the setting...")
 
     else:
         printcool(f"{protagonist.name} slips away, with an ominous feeling hanging about when they approach the kitchen.")

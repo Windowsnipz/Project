@@ -25,6 +25,7 @@ Softly call Emily's name, or sneak away?
         Emily starts to emerge from under the coffee table.
         Offer to hold her, or do nothing?
             if hold:
+                hold = True
                 "Come here, Em. Let's go outside."
                 Holding Emily in their arms, protag.name makes their way to the front door of their house.
                 Upon opening the door, they go outside.
@@ -32,6 +33,9 @@ Softly call Emily's name, or sneak away?
                 Emily stands up, arms wrapped around her stomach as if she were in pain.
                 "Something feels terrible"
                 protag.name and Emily make their way to the front door of their Kentucky home, and walk outside.
+        
+        The heavy air instantly sent chills up {protagonist.name}'s spine.
+        Something did not feel right with the setting...
 
     if away:
         You slip away, with an ominous feeling hanging about when you find yourself in the kitchen. --protag.name
