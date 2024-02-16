@@ -119,7 +119,7 @@ def emily_encounter1(protagonist):
                     printcool(f"As {protagonist.name} sobs, they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
                 
                 else:
-                    ... #RUN AWAY
+                    printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
 
         else:
             printcool(f"{protagonist.name} catches Emily by the shoulders, and shoves her to the ground", f"Grasping at her ankles, Emily takes a small bite out of {protagonist.name}'s foot.")
@@ -137,5 +137,8 @@ def emily_encounter1(protagonist):
                 printcool(f"As {protagonist.name} sobs, they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
 
             else:
-                .. #RUN AWAY
+                printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
+    
+    else:
+        printcool(f"Shoving Emily to the ground, {protagonist.name} sprints a few houses down.", "They caught their breath on someone else's back porch.")
         
