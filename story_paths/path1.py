@@ -127,6 +127,7 @@ def emily_encounter1(protagonist):
 
             if defend:
                 printcool(f"Closing their eyes, {protagonist.name} quickly gives a stomp to the head.")
+                emily.hurty(50)
 
                 printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
 
