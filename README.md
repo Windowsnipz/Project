@@ -9,7 +9,7 @@
 
 What will your software do? What features will it have? How will it be executed?
 
-My game will be a text-based adventure game executed in python. It will utilize pygame to streamline development. The game will feature an engaging story, random elements, and text inputs from the user.
+My game will be a text-based adventure game executed in python. The game will feature an engaging story, random elements, and text inputs from the user.
 
 What new skills will you need to acquire? What topics will you need to research?
 
