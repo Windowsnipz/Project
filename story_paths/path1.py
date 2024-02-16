@@ -91,4 +91,7 @@ def emily_encounter1(protagonist):
 
     printcool(f"Emily lunges at {protagonist.name}, demonic sounds echoing from her throat.", "Defend yourself, or do nothing?")
 
-    
+    choice = get_input("defend")
+
+    if choice:
+        printcool(f"{protagonist.name} defends themself, and takes out the {protagonist.weapon.name}.")
