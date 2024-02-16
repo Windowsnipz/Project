@@ -46,7 +46,6 @@ def path1():
         subchoice = get_input("hold")
 
         if subchoice:
-            hold = True
             printcool("\"Come here, Em. Let's go outside.\"")
 
             printcool(f"Holding Emily in their arms, {protagonist.name} makes their way to the front door of their house.", "Upon opening the door, they go outside.")
@@ -58,7 +57,7 @@ def path1():
 
         printcool(f"The heavy air instantly sent chills up {protagonist.name}'s spine.", "Something did not feel right with the setting...")
 
-        if hold:
+        if subchoice:
             printcool("Suddenly, Emily's body went limp.", f"{protagonist.name} felt the weight shift, and lowered her to the ground.")
 
             printcool("\"Emily!\"", "Something was wrong. Her body was unnaturally cold.")
@@ -91,7 +90,14 @@ def emily_encounter1(protagonist):
 
     printcool(f"Emily lunges at {protagonist.name}, demonic sounds echoing from her throat.", "Defend yourself, or do nothing?")
 
-    choice = get_input("defend")
+    defend = get_input("defend")
 
-    if choice:
-        printcool(f"{protagonist.name} defends themself, and takes out the {protagonist.weapon.name}.")
+    if defend:
+        if protagonist.weapon:
+
+            printcool(f"{protagonist.name} defends themself, and takes out the {protagonist.weapon.name}.")
+
+        else:
+            printcool(f"{protagonist.name} cathes Emily by the shoulders, and shoves her to the ground", f"Grasping at her ankles, Emily takes a small bite out of {protagonist.name}'s foot.")
+
+        
