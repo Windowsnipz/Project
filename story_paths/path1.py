@@ -144,4 +144,8 @@ def emily_encounter1(protagonist):
         
 
 def emily_encounter2(protagonist):
-    ...
+    emily = Zombie()
+
+    printcool(f"Hearing a loud crash, {protagonist.name} turns around.", "The window to the living room shattered.")
+
+    printcool("Below the window, Emily was writhing on the ground in an attempt to stand up.", f"\"Emily! What are you doing?\" yelled {protagonist.name}.")
