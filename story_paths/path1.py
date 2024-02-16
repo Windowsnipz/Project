@@ -56,7 +56,7 @@ def path1():
 
             printcool(f"{protagonist.name} and Emily make their way to the front door of their Kentucky home, and walk outside.")
 
-        printcool(f"The heavy air instantly sent chills up {protagonist.name}'s spine", "Something did not feel right with the setting...")
+        printcool(f"The heavy air instantly sent chills up {protagonist.name}'s spine.", "Something did not feel right with the setting...")
 
         if hold:
             printcool("Suddenly, Emily's body went limp.", f"{protagonist.name} felt the weight shift, and lowered her to the ground.")
