@@ -52,7 +52,7 @@ def path1():
             printcool(f"Holding Emily in their arms, {protagonist.name} makes their way to the front door of their house.", "Upon opening the door, they go outside.")
 
         else:
-            printcool("Emily stands up, arms wrapped around her stomach as if she were in pain.", "\"Something feels terrible\"")
+            printcool("Emily stands up, arms wrapped around her stomach as if she were in pain.", "\"Something feels terrible.\"")
 
             printcool(f"{protagonist.name} and Emily make their way to the front door of their Kentucky home, and walk outside.")
 
