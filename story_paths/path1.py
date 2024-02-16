@@ -97,7 +97,7 @@ def emily_encounter1(protagonist):
     if defend:
         if protagonist.weapon:
 
-            printcool(f"{protagonist.name} defends themself, and takes out the {protagonist.weapon.name}.")
+            printcool(f"In an attempt of self-defense, {protagonist.name} brands the {protagonist.weapon.name}.")
 
             printcool("Emily takes a strong blow to the torso, and falls to the ground.", f"{protagonist.name} screams of emotional pain.")
             emily.hurty(protagonist.weapon.damage)
@@ -105,7 +105,7 @@ def emily_encounter1(protagonist):
             if emily.is_dead():
                 printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
 
-                printcool(f"As {protagonist.name} sobs, they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                printcool(f"{protagonist.name} sobs, and they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
 
             else:
                 printcool(f"The {protagonist.weapon.name} wasn't enough to halt Emily's objective.", f"Once again, she quickly stands up and continues to advance on {protagonist.name}.")
@@ -118,7 +118,7 @@ def emily_encounter1(protagonist):
                     printcool(f"This time, {protagonist.name} gives a strong blow to the head, and Emily topples over.", "She doesn't get back up.")
 
                     printcool(f"She isn't moving, and her body lies still on the cold ground.")
-                    printcool(f"As {protagonist.name} sobs, they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                    printcool(f"{protagonist.name} sobs, and they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
                 
                 else:
                     printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
@@ -136,7 +136,7 @@ def emily_encounter1(protagonist):
 
                 printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
 
-                printcool(f"As {protagonist.name} sobs, they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                printcool(f"{protagonist.name} sobs, and they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
 
             else:
                 printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
