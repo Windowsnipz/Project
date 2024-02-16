@@ -24,6 +24,9 @@ class Zombie:
         self.health = health
         self.damage = damage
 
+    def hurty(self, damage_amount):
+        self.health -= damage_amount
+
 # Weapon object
 class Weapon:
     def __init__(self, name, damage):
