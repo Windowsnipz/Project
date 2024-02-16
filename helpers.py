@@ -18,7 +18,11 @@ class Character:
     @property
     def name(self):
         return self._name
-    
+
+class Zombie:
+    def __init__(self, health=50, damage=25):
+        self.health = health
+        self.damage = damage
 
 # Weapon object
 class Weapon:
