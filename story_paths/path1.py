@@ -159,14 +159,24 @@ def emily_encounter2(protagonist):
         printcool("\"EMI-\"", f"She enforces a tight grip on {protagonist.name}'s arm, and bits down hard.")
         protagonist.hurty(emily.damage)
 
-        printcool(f"Screaming in pain and confusion, {protagonist.name} shoves Emily away.", "Defend yourself, or wait?")
-        defend = get_input("defend")
+        if protagonist.weapon:
+            printcool(f"Screaming in pain and confusion, {protagonist.name} shoves Emily away.", "Defend yourself, or wait?")
+            defend = get_input("defend")
 
-        if defend:
-            ...
-        
+            if defend:
+                if protagonist.weapon:
+
+                    printcool(f"{protagonist.name} kicks at Emily's reaching hands, and gives a blow with the {protagonist.weapon.name}.")
+
+            else:
+                ... #TODO    wait -- Emily knocks protagonist to the ground and he dies
+            
         else:
-            ...
+            printcool(f"Screaming in pain and confusion, {protagonist.name} shoves Emily away.", "Run away, or wait to see what happens?")
+            run = get_input("run")
+
+            if run:
+                  printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")  
 
     else:
-        ...
+        ... #TODO Emily stands up and attacks.
