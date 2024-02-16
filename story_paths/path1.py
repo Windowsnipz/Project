@@ -97,6 +97,8 @@ def emily_encounter1(protagonist):
 
             printcool(f"{protagonist.name} defends themself, and takes out the {protagonist.weapon.name}.")
 
+            printcool("Emily takes a swift blow to the torso, and falls to the ground.", f"{protagonist.name} screams of emotional pain.")
+
         else:
             printcool(f"{protagonist.name} cathes Emily by the shoulders, and shoves her to the ground", f"Grasping at her ankles, Emily takes a small bite out of {protagonist.name}'s foot.")
 
