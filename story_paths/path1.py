@@ -88,3 +88,7 @@ def emily_encounter1(protagonist):
     printcool("Suddenly, Emily looks up at the sky.", "Her eyes are bloodshot and glazed over.")
 
     printcool("It all happened so fast.", f"She stood up so quickly, {protagonist.name} couldn't believe it.")
+
+    printcool(f"Emily lunges at {protagonist.name}, demonic sounds echoing from her throat.", "Defend yourself, or do nothing?")
+
+    
