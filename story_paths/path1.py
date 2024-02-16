@@ -117,6 +117,9 @@ def emily_encounter1(protagonist):
 
                     printcool(f"She isn't moving, and her body lies still on the cold ground.")
                     printcool(f"As {protagonist.name} sobs, they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                
+                else:
+                    ... #RUN AWAY
 
         else:
             printcool(f"{protagonist.name} catches Emily by the shoulders, and shoves her to the ground", f"Grasping at her ankles, Emily takes a small bite out of {protagonist.name}'s foot.")
@@ -132,4 +135,7 @@ def emily_encounter1(protagonist):
                 printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
 
                 printcool(f"As {protagonist.name} sobs, they hear faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+
+            else:
+                .. #RUN AWAY
         
