@@ -1,4 +1,4 @@
-from helpers import printcool, get_character_name, random_weapon, printgloom, get_input
+from helpers import Zombie, printcool, get_character_name, random_weapon, printgloom, get_input
 
 # Defining story path 1
 def path1():
@@ -83,6 +83,8 @@ def path1():
 
 
 def emily_encounter1(protagonist):
+    emily = Zombie()
+
     printcool("Suddenly, Emily looks up at the sky.", "Her eyes are bloodshot and glazed over.")
 
     printcool("It all happened so fast.", f"She stood up so quickly, {protagonist.name} couldn't believe it.")
