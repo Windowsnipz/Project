@@ -68,7 +68,7 @@ def path1():
 
             printcool(f"\"Emily!\"", "Indeed, something was horribly wrong.")
 
-        #TODO - Add emily encounter1
+        emily_encounter1(protagonist)
 
     else:
         printcool(f"{protagonist.name} slips away, with an ominous feeling hanging about when they approach the kitchen.")
