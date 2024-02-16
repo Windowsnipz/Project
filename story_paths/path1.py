@@ -149,3 +149,11 @@ def emily_encounter2(protagonist):
     printcool(f"Hearing a loud crash, {protagonist.name} turns around.", "The window to the living room shattered.")
 
     printcool("Below the window, Emily was writhing on the ground in an attempt to stand up.", f"\"Emily! What are you doing?\" yelled {protagonist.name}.")
+
+    printcool("Help her up, or wait?")
+    help = get_input("help")
+
+    if help:
+        printcool(f"Running over to help Emily up, {protagonist.name} reaches out their hand.", "Emily looks up. Her eyes are bloodshot and glazed over.")
+
+        printcool("\"EMI-\"", f"She enforces a tight grip on {protagonist.name}'s arm, and bits down hard.")
