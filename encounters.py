@@ -38,7 +38,7 @@ def encounter1(protagonist):
     printcool("\"What's wrong?\" asked the doctor, \"I thought you said there wasn't much pain?\"")
     printcool("\"You don't understand\" he grumbled.", "\"There's no possible way I can afford the medical bill.\"")
 
-    
+    printcool("\"I'm sorry, but we can't do anything about that at the moment.", "You should be focusing on getting better.\"")
 
 
 # Police car encounter
