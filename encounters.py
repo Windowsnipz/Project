@@ -4,6 +4,8 @@ import random
 from helpers import Zombie, printcool, random_weapon, get_input
 
 def encounters(protagonist):
+    hours = 0
+    zombies = 1
     while True:
         num = random.randint(1, 5)
         if num == 1:
@@ -18,7 +20,9 @@ def encounters(protagonist):
             encounter5()
         if protagonist.health <= 0:
             break
-    player_death()
+        hours += 1
+        zombies += 1
+    player_death(hours)
 
 
 
@@ -43,5 +47,5 @@ def encounter5():
 
 
 
-def player_death():
-    ...
+def player_death(hours, zombies):
+    printcool("Uh oh, it looks like you died", f"You survived for {hours} hours, and encountered {zombies} zombies.")
