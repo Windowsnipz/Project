@@ -75,16 +75,22 @@ def path1():
 
         printcool(f"Sneaking out of the front door, {protagonist.name} finds themself encapsulated in the gloomy weather.", "The heavy air sent chills up their spine.")
 
-        if emily_encounter2(protagonist):
+        if not emily_encounter2(protagonist):
             player_death()
             return
 
     # Now loop through encounters
     if protagonist.health < 100:
-        printcool(f"After recouperating from the horrid encounter, {protagonist.name} walks into the middle of the street.", f"Armed with a {protagonist.weapon.name}, they thoroughly looked at their surroundings.")
+        if protagonist.weapon:
+            printcool(f"After recouperating from the horrid encounter, {protagonist.name} walks into the middle of the street.", f"Armed with a {protagonist.weapon.name}, they thoroughly look at their surroundings.")
+        else:
+            printcool(f"After recouperating from the horrid encounter, {protagonist.name} walks into the middle of the street.", f"Armed with nothing, they rigorously look at their surroundings.")
 
     else:
-        printcool(f"After recouperating from the horrid encounter, a wounded {protagonist.name} stumbles into the middle of the street.", f"Armed with nothing, they rigorously looked at their surroundings.")
+        if protagonist.weapon:
+            printcool(f"After recouperating from the horrid encounter, a wounded {protagonist.name} stumbles into the middle of the street.", f"Armed with a {protagonist.weapon.name}, they thoroughly look at their surroundings.")
+        else:
+            printcool(f"After recouperating from the horrid encounter, a wounded {protagonist.name} stumbles into the middle of the street.", f"Armed with nothing, they look at their surroundings in a panic.")
     
     encounters(protagonist)
 
