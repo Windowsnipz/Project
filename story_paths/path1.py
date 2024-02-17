@@ -1,4 +1,4 @@
-from encounters import encounters
+from encounters import encounters, player_death
 from helpers import Zombie, printcool, get_character_name, random_weapon, printgloom, get_input
 
 # Defining story path 1
@@ -209,7 +209,11 @@ def emily_encounter2(protagonist):
                             printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
 
             else:
-                ... #TODO    wait -- Emily knocks protagonist to the ground and he dies
+                printcool("\"Emily!? Stop! Tell me what's going on!\"", "Emily looks up with a grotesque figure.")
+                printcool(f"{protagonist.name} knew what was looking at them wasn't Emily.", f"She pounced on {protagonist.name}, and everything darkened.")
+
+                player_death()
+
 
 
                 
