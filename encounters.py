@@ -28,12 +28,13 @@ def encounters(protagonist):
 
 
 
-# Police car encounter
+
+# Rosewood Medical encounter (broken collarbone?)
 def encounter1(protagonist):
     ...
 
 
-# Rosewood Medical encounter (broken collarbone?)
+# Police car encounter
 def encounter2(protagonist):
     ...
 
