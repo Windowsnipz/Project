@@ -186,7 +186,10 @@ def emily_encounter2(protagonist):
                     printcool(f"{protagonist.name} kicks at Emily's reaching hands, and gives a blow with the {protagonist.weapon.name}.")
                     emily.hurty(protagonist.weapon.damage)
                     if emily.is_dead():
-                        ... #TODO 
+                        printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
+
+                        printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                        printcool("They sprint away, and catch their breath on an old neighbor's back porch.")
 
                     else:
                         ... #TODO
