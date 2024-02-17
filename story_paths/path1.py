@@ -145,7 +145,7 @@ def emily_encounter1(protagonist):
                     printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
 
         else:
-            printcool(f"{protagonist.name} catches Emily by the shoulders, and shoves her to the ground", f"Grasping at her ankles, Emily takes a small bite out of {protagonist.name}'s foot.")
+            printcool(f"{protagonist.name} catches Emily by the shoulders, and shoves her to the ground.", f"Grasping at her ankles, Emily takes a small bite out of {protagonist.name}'s foot.")
             protagonist.hurty(emily.damage)
 
             printcool(f"{protagonist.name} cries in pain, both emotional and physical.", "Defend yourself, or try to run away?")
@@ -158,7 +158,7 @@ def emily_encounter1(protagonist):
                 printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
 
                 printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
-                printcool("They sprint away, and catch their breath on an old neighbor's back porch.")
+                printcool(f"{protagonist.name} sprints away, and catch their breath on an old neighbor's back porch.")
 
             else:
                 printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
@@ -288,7 +288,7 @@ def emily_encounter2(protagonist):
                     printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
 
                     printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
-                    printcool("They sprint away, and catch their breath on an old neighbor's back porch.")
+                    printcool(f"{protagonist.name} sprints away, and catch their breath on an old neighbor's back porch.")
 
                 else:
                     printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
