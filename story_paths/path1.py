@@ -57,7 +57,7 @@ def path1():
         printcool(f"The heavy air instantly sent chills up {protagonist.name}'s spine.", "Something did not feel right with the setting...")
 
         if subchoice:
-            printcool("Suddenly, Emily's body went limp.", f"{protagonist.name} felt the weight shift, and lowered her to the ground.")
+            printcool("All of a sudden, Emily's body went limp.", f"{protagonist.name} felt the weight shift, and lowered her to the ground.")
 
             printcool("\"Emily!\"", "Something was wrong. Her body was unnaturally cold.")
 
