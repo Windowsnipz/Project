@@ -2,6 +2,8 @@ import sys
 import random
 import time
 
+GLOBAL_CHARACTERS = ["Emily"]
+
 # Character object
 class Character:
     def __init__(self, name):
