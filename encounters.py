@@ -15,3 +15,24 @@ def encounters():
         encounter4()
     if num == 5:
         encounter5()
+
+
+
+def encounter1():
+    ...
+
+
+def encounter2():
+    ...
+
+
+def encounter3():
+    ...
+
+
+def encounter4():
+    ...
+
+
+def encounter5():
+    ...
