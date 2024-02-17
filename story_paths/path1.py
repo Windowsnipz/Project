@@ -1,3 +1,4 @@
+from encounters import encounters
 from helpers import Zombie, printcool, get_character_name, random_weapon, printgloom, get_input
 
 # Defining story path 1
@@ -75,6 +76,15 @@ def path1():
         printcool(f"Sneaking out of the front door, {protagonist.name} finds themself encapsulated in the gloomy weather.", "The heavy air sent chills up their spine.")
 
         emily_encounter2(protagonist)
+
+    # Now loop through encounters
+    if protagonist.health < 100:
+        printcool(f"After recouperating from the horrid encounter, {protagonist.name} walks into the middle of the street.", f"Armed with a {protagonist.weapon.name}, they thoroughly looked at their surroundings.")
+
+    else:
+        printcool(f"After recouperating from the horrid encounter, a wounded {protagonist.name} stumbles into the middle of the street.", f"Armed with nothing, they rigorously looked at their surroundings.")
+    
+    encounters(protagonist)
 
 
 
