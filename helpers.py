@@ -66,18 +66,23 @@ def start_game():
 
 
 # Gets character name and returns a character object
-            #TODO - Add a check for the name to make sure it's not empty, or too long
+            #TODO - Add a check for the name to make sure it's not empty, or too long.
+            #TODO - Make sure name is not in GLOBAL_CHARACTERS
 def get_character_name():
-    printcool("+--------------------------------------------+", end=None, delay=0.01)
-    printcool("What is the name of your survivor?", end=None)
-    name = input()
-    printcool("\n+--------------------------------------------+", end=None, delay=0.01)
-    time.sleep(1.1)
-    name = name.title()
+    while True:
+        printcool("+--------------------------------------------+", end=None, delay=0.01)
+        printcool("What is the name of your survivor?", end=None)
+        name = input()
+        printcool("\n+--------------------------------------------+", end=None, delay=0.01)
+        time.sleep(1.1)
+        name = name.title()
+        if name not in GLOBAL_CHARACTERS:
+            # Establish the protagonist as a Character object
+            protagonist = Character(name)
+            return protagonist
+            
+        printcool(f"{name} is already a character in the story. Please choose another name.", end=None)
 
-    # Establish the protagonist as a Character object
-    protagonist = Character(name)
-    return protagonist
 
 # A 1.5 second delay for the console output
 def wait():
