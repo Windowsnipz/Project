@@ -4,7 +4,7 @@ import random
 from helpers import Zombie, printcool, random_weapon, get_input
 
 def encounters(protagonist):
-    while protagonist.health > 0:
+    while True:
         num = random.randint(1, 5)
         if num == 1:
             encounter1()
@@ -16,6 +16,8 @@ def encounters(protagonist):
             encounter4()
         if num == 5:
             encounter5()
+        if protagonist.health <= 0:
+            break
     player_death()
 
 
