@@ -192,7 +192,21 @@ def emily_encounter2(protagonist):
                         printcool("They sprint away, and catch their breath on an old neighbor's back porch.")
 
                     else:
-                        ... #TODO
+                        printcool(f"The {protagonist.weapon.name} wasn't enough to halt Emily's objective.", f"Once again, she quickly lunges at {protagonist.name}.")
+
+                        printcool("Hit Emily again, or try to run away?")
+                        
+                        hit = get_input("hit")
+                        if hit:
+                            emily.hurty(protagonist.weapon.damage)
+                            printcool(f"This time, {protagonist.name} gives a swift blow to the head, and Emily topples over.", "She doesn't get back up.")
+
+                            printcool(f"She isn't moving, and her body lies still on the cold ground.")
+                            printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                            printcool("They sprint away, and catch their breath on an old neighbor's back porch.")
+                        
+                        else:
+                            printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
 
             else:
                 ... #TODO    wait -- Emily knocks protagonist to the ground and he dies
