@@ -9,15 +9,15 @@ def encounters(protagonist):
     while True:
         num = random.randint(1, 5)
         if num == 1:
-            encounter1()
+            encounter1(protagonist)
         if num == 2:
-            encounter2()
+            encounter2(protagonist)
         if num == 3:
-            encounter3()
+            encounter3(protagonist)
         if num == 4:
-            encounter4()
+            encounter4(protagonist)
         if num == 5:
-            encounter5()
+            encounter5(protagonist)
         if protagonist.health <= 0:
             break
         hours += 1
@@ -26,23 +26,23 @@ def encounters(protagonist):
 
 
 
-def encounter1():
+def encounter1(protagonist):
     ...
 
 
-def encounter2():
+def encounter2(protagonist):
     ...
 
 
-def encounter3():
+def encounter3(protagonist):
     ...
 
 
-def encounter4():
+def encounter4(protagonist):
     ...
 
 
-def encounter5():
+def encounter5(protagonist):
     ...
 
 
