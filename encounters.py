@@ -4,6 +4,7 @@ import random
 from helpers import Zombie, printcool, random_weapon, get_input
 
 def encounters(protagonist):
+    printcool(f"{protagonist.name} starts walking down the road, in search of help.")
     hours = 0
     zombies = 1
     while True:
@@ -20,6 +21,7 @@ def encounters(protagonist):
             encounter5(protagonist)
         if protagonist.health <= 0:
             break
+        printcool(f"{protagonist.name} continues walking down the road.")
         hours += 1
         zombies += 1
     player_death(hours)
