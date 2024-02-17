@@ -48,6 +48,8 @@ def encounter1(protagonist):
     printcool("Bodies begain to fill the hallway. Bodies that weren't human.", "Horrific sounds echoed from their mouths.")
 
     printcool("\"You have got to be kidding me!\" Noah exclaimed.", "\"Just eat me. I've had enough\"")
+    printcool(f"{protagonist.name} started to panic.", "Fight or run away?")
+    fight = get_input("fight")
 
 
 # Police car encounter
