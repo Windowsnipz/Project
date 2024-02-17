@@ -31,7 +31,14 @@ def encounters(protagonist):
 
 # Rosewood Medical encounter (broken collarbone?)
 def encounter1(protagonist):
-    ...
+    printcool("Noah was squirming in the doctor's office of Rosewood Medical.", "\"I knew I shouldn't have gone skiing today\"")
+
+    printcool("\"Don't put too much pressure on yourself. This break will heal on its own\" muttered the doctor.", "His lips curled, and he started to sniffle.")
+
+    printcool("\"What's wrong?\" asked the doctor, \"I thought you said there wasn't much pain?\"")
+    printcool("\"You don't understand\" he grumbled.", "\"There's no possible way I can afford the medical bill.\"")
+
+    
 
 
 # Police car encounter
