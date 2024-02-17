@@ -33,7 +33,7 @@ def path1():
 
         printgloom("\"..."), printcool("Emily\"")
 
-        printcool(f"Rolling to face {protagonist.name}, Emily's face bore tears.", "\"Something feels wrong,\" she whimpered.")
+        printcool(f"Rolling to face {protagonist.name}, Emily's face held tears.", "\"Something feels wrong,\" she whimpered.")
 
         printcool(f"\"How long have I been asleep?\" asked {protagonist.name}.", "Emily turned her eyes away, staring up at the bottom of the coffee table as if it were the ceiling.")
 
@@ -61,7 +61,7 @@ def path1():
             printcool("\"Emily!\"", "Something was wrong. Her body was unnaturally cold.")
 
         else:
-            printcool(f"A sudden thud startled {protagonist.name}.", "Looking back, they saw Emily who'd just fallen to the ground, convulsing unconrallably.")
+            printcool(f"A sudden thud startled {protagonist.name}.", "Looking back, they saw Emily who'd just fallen to the ground, convulsing uncontrollably.")
 
             printcool(f"\"Emily!\"", "Indeed, something was horribly wrong.")
 
@@ -170,6 +170,9 @@ def emily_encounter2(protagonist):
 
             else:
                 ... #TODO    wait -- Emily knocks protagonist to the ground and he dies
+
+
+                
             
         else:
             printcool(f"Screaming in pain and confusion, {protagonist.name} shoves Emily away.", "Run away, or wait to see what happens?")
