@@ -28,22 +28,26 @@ def encounters(protagonist):
 
 
 
+# Police car encounter
 def encounter1(protagonist):
     ...
 
 
+# Rosewood Medical encounter (broken collarbone?)
 def encounter2(protagonist):
     ...
 
 
+# Farmboys encounter ("Things aren't like they used to be.")
 def encounter3(protagonist):
     ...
 
 
+# TODO: encounter prompt
 def encounter4(protagonist):
     ...
 
-
+# TODO: encounter prompt
 def encounter5(protagonist):
     ...
 
