@@ -81,6 +81,11 @@ def path1():
 
 
 
+
+
+
+
+
 def emily_encounter1(protagonist):
     emily = Zombie()
 
@@ -135,6 +140,7 @@ def emily_encounter1(protagonist):
                 printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
 
                 printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                printcool("They sprint away, and catch their breath on an old neighbor's back porch.")
 
             else:
                 printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
@@ -198,6 +204,7 @@ def emily_encounter2(protagonist):
                     printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
 
                     printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                    printcool("They sprint away, and catch their breath on an old neighbor's back porch.")
 
                 else:
                     printcool(f"The {protagonist.weapon.name} wasn't enough to halt Emily's objective.", f"Once again, she quickly stands up and continues to advance on {protagonist.name}.")
@@ -211,6 +218,7 @@ def emily_encounter2(protagonist):
 
                         printcool(f"She isn't moving, and her body lies still on the cold ground.")
                         printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                        printcool("They sprint away, and catch their breath on an old neighbor's back porch.")
                     
                     else:
                         printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
@@ -229,6 +237,7 @@ def emily_encounter2(protagonist):
                     printcool("Emily isn't moving.", "Her body lies still on the cold ground.")
 
                     printcool(f"{protagonist.name} sobs, hearing faint groans in the distance.", "As atrocious as the scene was, something was telling them to move on.")
+                    printcool("They sprint away, and catch their breath on an old neighbor's back porch.")
 
                 else:
                     printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")
