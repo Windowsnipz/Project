@@ -75,7 +75,9 @@ def path1():
 
         printcool(f"Sneaking out of the front door, {protagonist.name} finds themself encapsulated in the gloomy weather.", "The heavy air sent chills up their spine.")
 
-        emily_encounter2(protagonist)
+        if emily_encounter2(protagonist):
+            player_death()
+            return
 
     # Now loop through encounters
     if protagonist.health < 100:
@@ -171,7 +173,7 @@ def emily_encounter2(protagonist):
     help = get_input("help")
 
     if help:
-        printcool(f"Running over to help Emily up, {protagonist.name} reaches out their hand.", "Emily looks up. Her eyes are bloodshot and glazed over.")
+        printcool(f"Running over to help Emily, {protagonist.name} reaches out their hand.", "Emily looks up. Her eyes are bloodshot and glazed over.")
 
         printcool("\"EMI-\"", f"She enforces a tight grip on {protagonist.name}'s arm, and bits down hard.")
         protagonist.hurty(emily.damage)
@@ -212,18 +214,22 @@ def emily_encounter2(protagonist):
                 printcool("\"Emily!? Stop! Tell me what's going on!\"", "Emily looks up with a grotesque figure.")
                 printcool(f"{protagonist.name} knew what was looking at them wasn't Emily.", f"She pounced on {protagonist.name}, and everything darkened.")
 
-                player_death()
+                return False # Player dies
 
 
-
-                
-            
-        else:
+        else: # No weapon
             printcool(f"Screaming in pain and confusion, {protagonist.name} shoves Emily away.", "Run away, or wait to see what happens?")
             run = get_input("run")
 
             if run:
-                  printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.")  
+                  printcool(f"{protagonist.name} sprints a few houses down to increase the distance between them and what was left of Emily.", "They caught their breath on someone else's back porch.") 
+
+            else: 
+                ... #TODO 
+                printcool("\"Emily!? Stop! Tell me what's going on!\"", "Emily looks up with a grotesque figure.")
+                printcool(f"{protagonist.name} knew what was looking at them wasn't Emily.", f"She pounced on {protagonist.name}, and everything darkened.")
+
+                return False # Player dies
 
     else:
         printcool(f"Emily lunges at {protagonist.name}, demonic sounds echoing from her throat.", "Defend yourself, or do nothing?")
@@ -282,3 +288,5 @@ def emily_encounter2(protagonist):
         
         else:
             printcool(f"Shoving Emily to the ground, {protagonist.name} sprints a few houses down.", "They caught their breath on someone else's back porch.")
+
+    return True

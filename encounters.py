@@ -50,4 +50,4 @@ def encounter5(protagonist):
 
 
 def player_death(hours=0, zombies=1):
-    printcool("Uh oh, it looks like you died", f"You survived for {hours} hours, and encountered {zombies} zombies.")
+    printcool("Uh oh, it looks like you died.", f"You survived for {hours} hour(s), and encountered {zombies} zombie(s).")
