@@ -159,6 +159,7 @@ def emily_encounter1(protagonist):
         printcool(f"Shoving Emily to the ground, {protagonist.name} sprints a few houses down.", "They caught their breath on someone else's back porch.")
         
 
+
 def emily_encounter2(protagonist):
     emily = Zombie()
 
@@ -183,6 +184,12 @@ def emily_encounter2(protagonist):
                 if protagonist.weapon:
 
                     printcool(f"{protagonist.name} kicks at Emily's reaching hands, and gives a blow with the {protagonist.weapon.name}.")
+                    emily.hurty(protagonist.weapon.damage)
+                    if emily.is_dead():
+                        ... #TODO 
+
+                    else:
+                        ... #TODO
 
             else:
                 ... #TODO    wait -- Emily knocks protagonist to the ground and he dies
