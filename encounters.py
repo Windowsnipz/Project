@@ -81,10 +81,21 @@ def encounter1(protagonist):
                 return
 
         else: #No weapon
-            ...
+            printcool(f"{protagonist.name} tries to fight off one with their bare hands.", "They soon realized that it was not very effective.")
+            printcool(f"The crowd closes in on them, and {protagonist.name} is overwhelmed.")
+            death = True
+            return
 
     else:
         ... #TODO: run out the door, a zombie catches player by the shirt. 2 choices, one you get hurt, one you don't.
+        printcool(f"{protagonist.name} bolts out the door, ready to make a run for it.", "However, one of the undead grabs them by the back of their shirt.")
+        printcool(f"Struggling to pry themselves free, {protagonist.name} underestimated the grip of the twist creature.", "Give a punch or a kick?")
+        kick = get_input("kick")
+
+        if kick: #Break free with no harm and get away
+            ...
+        else: #player gets hurt, but gets away
+            ...
 
     #TODO: protagonist gets away, and continues down the road. 
         
@@ -101,7 +112,7 @@ def encounter3(protagonist):
     ...
 
 
-# TODO: encounter prompt
+# TODO: Church encounter(?)
 def encounter4(protagonist):
     ...
 
