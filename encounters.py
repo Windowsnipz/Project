@@ -149,7 +149,8 @@ def encounter2(protagonist, zombies):
                 shove = get_input("shove")
 
                 if shove: #Player shoves zed to ground, grabs weapon, and finishes it off.
-                    ...
+                    printcool(f"{protagonist.name} it by the shoulders and shoves it to the ground.", f"They run over and grab the {protagonist.weapon.name}, which was resting on the ground near the cruiser.")
+                    printcool("With the weapon in hand, they walk back over to the corpse wriggling on the ground.", f"{protagonist.name} gave a fatal blow, and the nightmare was over.")
 
                 else: #player was not a professional boxer, and dies.
                     ...
@@ -161,6 +162,7 @@ def encounter2(protagonist, zombies):
     else: #Kick at their face
         ...
 
+    #TODO: ending the scenes, tying them all together
 
 
 
