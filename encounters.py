@@ -107,7 +107,7 @@ def encounter1(protagonist, zombies):
 
     printcool("As some time passes, they slow down their pace to catch their breath.")
         
-    #TODO: number of zombies encountered increase by 10.
+    # number of zombies encountered increase by 10.
     zombies += 10
 
 
@@ -168,6 +168,8 @@ def encounter2(protagonist, zombies):
 
     #TODO: ending the scenes, tying them all together
 
+    # number of zombies encountered increase by 2.
+    zombies += 2
 
 
 # Farmboys encounter ("Things aren't like they used to be.")
