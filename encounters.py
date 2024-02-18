@@ -62,10 +62,26 @@ def encounter1(protagonist):
             printcool(f"{protagonist.name} tries to land a strike on an incoming zombie.", f"However, the {protagonist.weapon.name} wan't much help.")
             printcool(f"Another one came from behind and managed to scratch {protagonist.name}'s neck.")
             protagonist.hurty(25)
-            if protagonist.health <= 0:
 
+            if protagonist.health <= 0:
                 death = True
                 return
+            
+            #still alive, manage to get away
+            printcool(f"{protagonist.name}'s panic rose to a new level.", "Run or stand your ground?")
+            run = get_input("run")
+
+            if run: # player runs away
+                printcool(f"In an attempt to get away, {protagonist.name} runs out the door.", "They round the corner of the building and run down the street for a while.")
+            
+            else: #Player dies
+                printcool(f"Digging their heels into the ground, {protagonist.name} is ready to fight off the horde.", "However, the crowd closes in on them, and they are overwhelmed.")
+                printcool(f"The screams of {protagonist.name} begin to fade, and their name is added to the list of the undead.")
+                death = True
+                return
+
+        else: #No weapon
+            ...
 
     else:
         ... #TODO: run out the door, a zombie catches player by the shirt. 2 choices, one you get hurt, one you don't.
