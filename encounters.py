@@ -161,12 +161,34 @@ def encounter2(protagonist, zombies):
 
 
         else: #No weapon, suffer a bite
-            ...
+            printcool(f"Unfortunately, {protagonist.name} was not equipped with a weapon for self-defence.", f"The zombie bit a chunk of flesh out of {protagonist.name}'s leg.")
+
+            protagonist.hurty(25)
+            if protagonist.health <= 0:
+                death = True
+                return
+
+            printcool(f"{protagonist.name} manage to squirm away, with blood running from their leg.", "They hobble away as fast as they can.")
 
     else: #Kick at their face
-        ...
+        printcool(f"{protagonist.name} throws a strong heel to the creature's face.", f"It softens its grip, and {protagonist.name} prys themselves free.")
+        printcool("The zombie still contiues to crawl towards them.", "Run away or give it a strong heel to the head?")
+        run = get_input("run")
+
+        if run: #Player runs away
+            printcool(f"{protagonist.name} starts to sprint away.")
+
+        else: #Player stomps on the head, but gets scratched
+            printcool(f"In a nervous panic, {protagonist.name} gives a series of stomps to the zombie's head, finishing it off.")
+            printcool(f"{protagonist.name} raises their leg slowly, looking at the blood pouring from their ankle.", f"It seems {protagonist.name} suffered a large scratch.")
+
+            protagonist.hurty(25)
+            if protagonist.health <= 0:
+                death = True
+                return
 
     #TODO: ending the scenes, tying them all together
+    printcool(f"As {protagonist.name} flees the scene, the thumping of the one left in the car begin to fade.", "After a while, they recollect on the events and sob.")
 
     # number of zombies encountered increase by 2.
     zombies += 2
