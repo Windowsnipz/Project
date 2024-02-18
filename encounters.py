@@ -139,12 +139,20 @@ def encounter2(protagonist, zombies):
 
             printcool("They stand up, quickly regaining their footing.")
 
-            if zed.is_dead():
-                #pick weapon back up
-                ...
-            else: 
-                #zombie crawls out. Two choices, one kills it, one you die.
-                ...
+            if zed.is_dead(): #pick weapon back up
+                printcool("The creature lies motionless on the ground.", f"{protagonist.name} carefully walks over and retrieves their {protagonist.weapon.name}.")
+
+                
+            else: #zombie not dead, and it crawls out. Two choices, one kills it, one you die.
+                printcool(f"It stunned it enough to let go of {protagonist.name}, but the monster kept advancing", "It crawled out from under the vehicle, and stands up.")
+                printcool(f"{protagonist.name} was on the verge of shock. The zombie lunged at them.", "Shove them away, or give a punch?")
+                shove = get_input("shove")
+
+                if shove: #Player shoves zed to ground, grabs weapon, and finishes it off.
+                    ...
+
+                else: #player was not a professional boxer, and dies.
+                    ...
 
 
         else: #No weapon, suffer a bite
