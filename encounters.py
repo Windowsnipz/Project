@@ -93,9 +93,19 @@ def encounter1(protagonist):
         kick = get_input("kick")
 
         if kick: #Break free with no harm and get away
-            ...
+            printcool(f"{protagonist.name} spins around and gives a leg sweep in one fluid motion.", f"The zombie falls to the ground, and {protagonist.name} is able to get away.")
+            printcool("Rounding a corner, they continue to run down the street for a while.")
+
         else: #player gets hurt, but gets away
-            ...
+            printcool(f"{protagonist.name} turns and throws a punch.", "Unfortanetly, their fist land on an exposed jaw, cutting their knuckles.")
+            protagonist.hurty(25)
+
+            if protagonist.health <= 0:
+                death = True
+                return
+            printcool(f"After knocking the creature to the ground, {protagonist.name} sprints away.", "They round the corner of a building and jog down the street for a while.")
+            
+
 
     #TODO: protagonist gets away, and continues down the road. 
         
