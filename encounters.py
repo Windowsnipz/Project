@@ -126,8 +126,20 @@ def encounter2(protagonist, zombies):
     printcool("It was too late. His eyes were empty, and blood covered his face.", f"The corpse began to shake the car, banging on the window facing {protagonist.name}.")
     printcool("\"Oh my god...\"", f"{protagonist.name}'s mind was filled with fear and dread.")
 
-    printcool(f"Suddenly, a hand came from under the cruiser, and grabbed {protagonist.name} by the ankle.", "They fell to the ground, able to see what was previously hidden underneath the car.")
-    
+    printcool(f"Suddenly, a hand came from under the cruiser, and grabbed {protagonist.name} by the ankle.", "They fell backwards, able to see what was previously hidden underneath the car.")
+    printcool("It was another corpsed in a uniform, joined by someone else's mangled remains.", "Throw your weapon at them, or kick at their face?")
+    throw = get_input("throw")
+
+    if throw:
+        
+        if protagonist.weapon:
+            ...
+
+        else: #No weapon, suffer a bite
+            ...
+
+    else: #Kick at their face
+        ...
 
 
 
