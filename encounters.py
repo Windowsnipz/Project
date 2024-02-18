@@ -3,12 +3,14 @@ import random
 
 from helpers import Zombie, printcool, random_weapon, get_input
 
+death = False
+
 def encounters(protagonist):
     printcool(f"{protagonist.name} starts walking down the road, in search of help.")
     hours = 0
     zombies = 1
     while True:
-        num = random.randint(1, 5)
+        num = random.randint(1, 1) #CHANGE LATER. Is set to 1 for testing purposes.
         if num == 1:
             encounter1(protagonist)
         if num == 2:
@@ -19,7 +21,7 @@ def encounters(protagonist):
             encounter4(protagonist)
         if num == 5:
             encounter5(protagonist)
-        if protagonist.health <= 0:
+        if death:
             break
         printcool(f"{protagonist.name} continues walking down the road.")
         hours += 1
@@ -31,6 +33,8 @@ def encounters(protagonist):
 
 # Rosewood Medical encounter (broken collarbone?)
 def encounter1(protagonist):
+    global death # Declare death as a global variable
+
     printcool("Noah was squirming in the doctor's office of Rosewood Medical.", "\"I knew I shouldn't have gone skiing today.\"")
 
     printcool("\"Don't put too much pressure on yourself. This break will heal on its own,\" muttered the doctor.", "His lips curled, and he started to sniffle.")
@@ -50,6 +54,24 @@ def encounter1(protagonist):
     printcool("\"You have got to be kidding me!\" Noah exclaimed.", "\"Just eat me. I've had enough...\"")
     printcool(f"{protagonist.name} started to panic.", "Fight or run away?")
     fight = get_input("fight")
+
+    if fight:
+        ... #TODO: fight, but get hurt. If fight again, you ded.
+        if protagonist.weapon:
+            printcool(f"{protagonist.name} tries to land a strike on an incoming zombie.", f"However, the {protagonist.weapon.name} wan't much help.")
+            printcool(f"Another one came from behind and managed to scratch {protagonist.name}'s neck.")
+            protagonist.hurty(25)
+            if protagonist.health <= 0:
+
+                death = True
+                return
+
+    else:
+        ... #TODO: run out the door, a zombie catches player by the shirt. 2 choices, one you get hurt, one you don't.
+
+    #TODO: protagonist gets away, and continues down the road. 
+        
+    #TODO: number of zombies encountered increase by 10.
 
 
 # Police car encounter
