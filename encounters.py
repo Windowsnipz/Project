@@ -56,8 +56,7 @@ def encounter1(protagonist):
     printcool(f"{protagonist.name} started to panic.", "Fight or run away?")
     fight = get_input("fight")
 
-    if fight:
-        ... #TODO: fight, but get hurt. If fight again, you ded.
+    if fight: #fight, but get hurt. If fight again, you ded.
         if protagonist.weapon:
             printcool(f"{protagonist.name} tries to land a strike on an incoming zombie.", f"However, the {protagonist.weapon.name} wan't much help.")
             printcool(f"Another one came from behind and managed to scratch {protagonist.name}'s neck.")
@@ -86,8 +85,7 @@ def encounter1(protagonist):
             death = True
             return
 
-    else:
-        ... #TODO: run out the door, a zombie catches player by the shirt. 2 choices, one you get hurt, one you don't.
+    else: #run out the door, a zombie catches player by the shirt. 2 choices, one you get hurt, one you don't.
         printcool(f"{protagonist.name} bolts out the door, ready to make a run for it.", "However, one of the undead grabs them by the back of their shirt.")
         printcool(f"Struggling to pry themselves free, {protagonist.name} underestimated the grip of the twist creature.", "Give a punch or a kick?")
         kick = get_input("kick")
@@ -107,7 +105,6 @@ def encounter1(protagonist):
 
 
 
-    #TODO: protagonist gets away, and continues down the road.
     printcool("As some time passes, they slow down their pace to catch their breath.")
         
     #TODO: number of zombies encountered increase by 10.
