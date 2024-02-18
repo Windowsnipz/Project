@@ -116,6 +116,7 @@ def encounter1(protagonist, zombies):
 # Police car encounter
 def encounter2(protagonist, zombies):
     global death # Declare death as a global variable
+    zed = Zombie()
 
     printcool("Some time passes...."), time.sleep(1)
     printcool(f"{protagonist.name} sees a two police cars in the distance, blocking the road.", "As they close the distance, they notice a single officer sitting in one of the cruisers.")
@@ -132,8 +133,19 @@ def encounter2(protagonist, zombies):
 
     if throw:
         
-        if protagonist.weapon:
-            ...
+        if protagonist.weapon: #Player throws their weapon, but retrieves it at the end.
+            printcool(f"{protagonist.name} throws the {protagonist.weapon.name} at the undead corpse.", f"It hit them square in the face, and they released their grip on {protagonist.name}.")
+            zed.hurty(protagonist.weapon.damage) #damage the zombie
+
+            printcool("They stand up, quickly regaining their footing.")
+
+            if zed.is_dead():
+                #pick weapon back up
+                ...
+            else: 
+                #zombie crawls out. Two choices, one kills it, one you die.
+                ...
+
 
         else: #No weapon, suffer a bite
             ...
