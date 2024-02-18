@@ -153,7 +153,11 @@ def encounter2(protagonist, zombies):
                     printcool("With the weapon in hand, they walk back over to the corpse wriggling on the ground.", f"{protagonist.name} gave a fatal blow, and the nightmare was over.")
 
                 else: #player was not a professional boxer, and dies.
-                    ...
+                    printcool(f"It was evident that {protagonist.name} did not have a career in professional boxing.", "The creature caught the fist in their mouth and crunched down hard.")
+                    printcool("\"AAH!\"", f"The zombie managed to pull {protagonist.name} to the ground, and it was over for them.")
+
+                    death = True
+                    return
 
 
         else: #No weapon, suffer a bite
