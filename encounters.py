@@ -5,7 +5,6 @@ import time
 from helpers import Zombie, printcool, random_weapon, get_input
 
 death = False
-zombies = 1
 
 def encounters(protagonist):
     printcool(f"{protagonist.name} starts walking down the road, in search of help.")
@@ -14,29 +13,27 @@ def encounters(protagonist):
     while True:
         num = random.randint(1, 1) #CHANGE LATER. Is set to 1 for testing purposes.
         if num == 1:
-            encounter1(protagonist)
+            encounter1(protagonist, zombies)
         if num == 2:
-            encounter2(protagonist)
+            encounter2(protagonist, zombies)
         if num == 3:
-            encounter3(protagonist)
+            encounter3(protagonist, zombies)
         if num == 4:
-            encounter4(protagonist)
+            encounter4(protagonist, zombies)
         if num == 5:
-            encounter5(protagonist)
+            encounter5(protagonist, zombies)
         if death:
             break
         printcool(f"{protagonist.name} continues walking down the road.")
         hours += 1
-        zombies += 1
     player_death(hours, zombies)
 
 
 
 
 # Rosewood Medical encounter (broken collarbone?)
-def encounter1(protagonist):
+def encounter1(protagonist, zombies):
     global death # Declare death as a global variable
-    global zombies # Declare zombies as a global variable
 
     printcool("Meanwhile, in another part of town....."), time.sleep(1)
     printcool("Noah was squirming in the doctor's office of Rosewood Medical.", "\"I knew I shouldn't have gone skiing today.\"")
@@ -115,21 +112,29 @@ def encounter1(protagonist):
 
 
 # Police car encounter
-def encounter2(protagonist):
-    ...
+def encounter2(protagonist, zombies):
+    global death # Declare death as a global variable
+
+    printcool("Some time passes...."), time.sleep(1)
+    printcool(f"{protagonist.name} sees a two police cars in the distance, blocking the road.", "As they close the distance, they notice a single officer sitting in one of the cruisers.")
+
+    printcool("It lookes as if they were dozing off in the driver's seat.", f"{protagonist.name} approaches to tap on the glass.")
+    printcool("\"Officer? I need your help. I don't understand what's going on.\"","The policeman's head snaps up, and he jerks his face toward the window.")
+
+
 
 
 # Farmboys encounter ("Things aren't like they used to be.")
-def encounter3(protagonist):
+def encounter3(protagonist, zombies):
     ...
 
 
 # TODO: Church encounter(?)
-def encounter4(protagonist):
+def encounter4(protagonist, zombies):
     ...
 
 # TODO: encounter prompt
-def encounter5(protagonist):
+def encounter5(protagonist, zombies):
     ...
 
 
