@@ -1,9 +1,11 @@
 # Loops player encounters until player dies :(
 import random
+import time
 
 from helpers import Zombie, printcool, random_weapon, get_input
 
 death = False
+zombies = 1
 
 def encounters(protagonist):
     printcool(f"{protagonist.name} starts walking down the road, in search of help.")
@@ -34,8 +36,9 @@ def encounters(protagonist):
 # Rosewood Medical encounter (broken collarbone?)
 def encounter1(protagonist):
     global death # Declare death as a global variable
+    global zombies # Declare zombies as a global variable
 
-    printcool("Meanwhile, in another part of town.....", end=None)
+    printcool("Meanwhile, in another part of town.....", end=None), time.sleep(1.5)
     printcool("Noah was squirming in the doctor's office of Rosewood Medical.", "\"I knew I shouldn't have gone skiing today.\"")
 
     printcool("\"Don't put too much pressure on yourself. This break will heal on its own,\" muttered the doctor.", "His lips curled, and he started to sniffle.")
