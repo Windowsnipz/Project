@@ -111,6 +111,8 @@ def encounter1(protagonist, zombies):
     zombies += 10
 
 
+
+
 # Police car encounter
 def encounter2(protagonist, zombies):
     global death # Declare death as a global variable
@@ -120,6 +122,12 @@ def encounter2(protagonist, zombies):
 
     printcool("It lookes as if they were dozing off in the driver's seat.", f"{protagonist.name} approaches to tap on the glass.")
     printcool("\"Officer? I need your help. I don't understand what's going on.\"","The policeman's head snaps up, and he jerks his face toward the window.")
+
+    printcool("It was too late. His eyes were empty, and blood covered his face.", f"The corpse began to shake the car, banging on the window facing {protagonist.name}.")
+    printcool("\"Oh my god...\"", f"{protagonist.name}'s mind was filled with fear and dread.")
+
+    printcool(f"Suddenly, a hand came from under the cruiser, and grabbed {protagonist.name} by the ankle.", "They fell to the ground, able to see what was previously hidden underneath the car.")
+    
 
 
 
