@@ -104,12 +104,14 @@ def encounter1(protagonist):
                 death = True
                 return
             printcool(f"After knocking the creature to the ground, {protagonist.name} sprints away.", "They round the corner of a building and jog down the street for a while.")
-            
 
 
-    #TODO: protagonist gets away, and continues down the road. 
+
+    #TODO: protagonist gets away, and continues down the road.
+    printcool("As some time passes, they slow down their pace to catch their breath.")
         
     #TODO: number of zombies encountered increase by 10.
+    zombies += 10
 
 
 # Police car encounter
