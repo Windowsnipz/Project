@@ -2,7 +2,7 @@ import sys
 import random
 import time
 
-GLOBAL_CHARACTERS = ["Emily"]
+GLOBAL_CHARACTERS = ["Emily", "Noah"]
 
 # Character object
 class Character:
