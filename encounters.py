@@ -20,8 +20,6 @@ def encounters(protagonist):
             encounter3(protagonist, zombies)
         if num == 4:
             encounter4(protagonist, zombies)
-        if num == 5:
-            encounter5(protagonist, zombies)
         if death:
             break
         printcool(f"{protagonist.name} continues walking down the road.")
@@ -234,11 +232,6 @@ def encounter3(protagonist, zombies):
 # TODO: Church encounter(?)
 def encounter4(protagonist, zombies):
     ...
-
-# TODO: encounter prompt
-def encounter5(protagonist, zombies):
-    ...
-
 
 
 def player_death(hours=0, zombies=1):
