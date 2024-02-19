@@ -213,6 +213,13 @@ def encounter3(protagonist, zombies):
 
     printcool("With his back against a tree, he stops to catch his breath.", "He looks up, seeing several shadows moving about the trees.")
     printcool("Nobody knows whatever happened to Jorge.")
+    printcool("Some time passes...."), time.sleep(1)
+
+    printcool(f"{protagonist.name} sees a farm in the distance. There's smoke coming from the property.", "Getting closer, they realize the house and barn are up in flames.")
+    printcool(f"{protagonist.name} observes several burning corpses scattered about the small farm. Some are walking, and others lying still on the ground.", "They hear something mumble in the roadside ditch.")
+
+    printcool("\"Help... is someone there...\"", f"Looking down, {protagonist.name} sees a mangled body, dressed in bloody overalls.")
+    printcool("\"Get out of here...\", he whimpered with much effort. \"It's not safe.\"", f"{protagonist.name} looks away and moves on. \"I'm  sorry.\"")
 
 
 # TODO: Church encounter(?)
