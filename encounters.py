@@ -119,7 +119,7 @@ def encounter2(protagonist, zombies):
     zed = Zombie()
 
     printcool("Some time passes...."), time.sleep(1)
-    printcool(f"{protagonist.name} sees a two police cars in the distance, blocking the road.", "As they close the distance, they notice a single officer sitting in one of the cruisers.")
+    printcool(f"{protagonist.name} sees two police cars in the distance, blocking the road.", "As they close the distance, they notice a single officer sitting in one of the cruisers.")
 
     printcool("It lookes as if they were dozing off in the driver's seat.", f"{protagonist.name} approaches to tap on the glass.")
     printcool("\"Officer? I need your help. I don't understand what's going on.\"","The policeman's head snaps up, and he jerks his face toward the window.")
@@ -128,7 +128,7 @@ def encounter2(protagonist, zombies):
     printcool("\"Oh my god...\"", f"{protagonist.name}'s mind was filled with fear and dread.")
 
     printcool(f"Suddenly, a hand came from under the cruiser, and grabbed {protagonist.name} by the ankle.", "They fell backwards, able to see what was previously hidden underneath the car.")
-    printcool("It was another corpsed in a uniform, joined by someone else's mangled remains.", "Throw your weapon at them, or kick at their face?")
+    printcool("It was another creature in police uniform, joined by someone else's mangled remains.", "Throw your weapon at them, or kick at their face?")
     throw = get_input("throw")
 
     if throw:
@@ -144,12 +144,12 @@ def encounter2(protagonist, zombies):
 
                 
             else: #zombie not dead, and it crawls out. Two choices, one kills it, one you die.
-                printcool(f"It stunned it enough to let go of {protagonist.name}, but the monster kept advancing", "It crawled out from under the vehicle, and stands up.")
+                printcool(f"The attack stunned it enough to let go of {protagonist.name}, but the monster kept advancing", "It crawled out from under the vehicle, and stands up.")
                 printcool(f"{protagonist.name} was on the verge of shock. The zombie lunged at them.", "Shove them away, or give a punch?")
                 shove = get_input("shove")
 
                 if shove: #Player shoves zed to ground, grabs weapon, and finishes it off.
-                    printcool(f"{protagonist.name} it by the shoulders and shoves it to the ground.", f"They run over and grab the {protagonist.weapon.name}, which was resting on the ground near the cruiser.")
+                    printcool(f"{protagonist.name} catches it by the shoulders and shoves it to the ground.", f"They run over and grab the {protagonist.weapon.name}, which was resting on the ground near the cruiser.")
                     printcool("With the weapon in hand, they walk back over to the corpse wriggling on the ground.", f"{protagonist.name} gave a fatal blow, and the nightmare was over.")
 
                 else: #player was not a professional boxer, and dies.
@@ -188,7 +188,7 @@ def encounter2(protagonist, zombies):
                 return
 
     #TODO: ending the scenes, tying them all together
-    printcool(f"As {protagonist.name} flees the scene, the thumping of the one left in the car begin to fade.", "After a while, they recollect on the events and sob.")
+    printcool(f"As {protagonist.name} flees the scene, the thumping of the one left in the car began to fade.", "After a while, they recollect on the events and sob.")
 
     # number of zombies encountered increase by 2.
     zombies += 2
