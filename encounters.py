@@ -199,6 +199,21 @@ def encounter2(protagonist, zombies):
 def encounter3(protagonist, zombies):
     printcool("Meanwhile, in another part Knox County....."), time.sleep(1)
 
+    printcool("Jorge was talking with his father in the barn.", "\"Things aren't like they used to be, Pa.\"")
+    printcool("\"Like damn they aren't, Jorge.", "I'll keep doing things that have always worked for us.\"")
+
+    printcool("For a moment, the two sit in silence.", "The sound of the wind died down, and the cricket chirps faded. It was dead quiet.")
+    printcool("A loud crash and a blood curdling scream rumbled from the house.", "\"What the hell was that?!\" Jorge shouted.")
+
+    printcool("The father and son run out the barn and rush over to the house.", "The building was being engulfed by a crowd of people.")
+    printcool("The two of them stand in shock, trying to process the situation.", "These weren't people.")
+
+    printcool("\"Jorge, get out of here!\"yelled Pa.", "\"I have to run in and save your mother! Go! Now!!\"")
+    printcool("After briefly hesitating, Jeorge bolts away", "Shortly after, he makes it into the nearby woods.")
+
+    printcool("With his back against a tree, he stops to catch his breath.", "He looks up, seeing several shadows moving about the trees.")
+    printcool("Nobody knows whatever happened to Jorge.")
+
 
 # TODO: Church encounter(?)
 def encounter4(protagonist, zombies):
