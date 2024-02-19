@@ -197,7 +197,7 @@ def encounter2(protagonist, zombies):
 
 # Farmboys encounter ("Things aren't like they used to be.")
 def encounter3(protagonist, zombies):
-    ...
+    printcool("Meanwhile, in another part Knox County....."), time.sleep(1)
 
 
 # TODO: Church encounter(?)
