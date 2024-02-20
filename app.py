@@ -4,11 +4,8 @@ import time
 import os #TODO add line wrapping
 import sys
 
-
 from helpers import printcool, start_game
 from story_paths.path1 import path1
-
-
 
 
 def main():
@@ -36,12 +33,6 @@ def title_screen():
 
     if not start_game():
         sys.exit(1)
-
-
-
-
-def path2():
-    printcool("YEET YEET, story has not been created yet")
 
 
 
