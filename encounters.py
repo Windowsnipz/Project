@@ -239,7 +239,19 @@ def encounter3(protagonist, zombies):
         printcool(f"Slipping into the trees and running a while, {protagonist.name} hides behind a tree, bends over, and catches their breath.", "However, they still hear sounds closing in.")
         printcool(f"{protagonist.name} peeks from behind the tree, and fortunately sees only one creature.", "It's slowly hobbling in their direction.")
 
-        
+        printcool(f"Now approaching the tree, {protagonist.name} was ready to take action.", "Attack or shove it to ground?")
+        attack = get_input("attack")    
+
+        if attack: #Player attacks, and is safe.
+            if protagonist.weapon:
+                printcool(f"{protagonist.name} lunges from behind the tree, raising their {protagonist.weapon.name}.", "They land a strong blow to the forehead, and the corpse topples over.")
+                printcool(f"{protagonist.name} stands ready, staring at it on the ground.", "The zombie isn't moving. It looks like the strike was enough.")
+
+            else: #Player dies
+                ...
+
+        else: #Shove to the ground, and run off.
+            ...
 
 
     #TODO: ending
