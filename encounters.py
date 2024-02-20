@@ -208,10 +208,10 @@ def encounter3(protagonist, zombies):
     printcool("The father and son run out the barn and rush over to the house.", "The building was being engulfed by a crowd of people.")
     printcool("The two of them stand in shock, trying to process the situation.", "These weren't people.")
 
-    printcool("\"Jorge, get out of here!\"yelled Pa.", "\"I need to get your mother! Go! Now!!\"")
+    printcool("\"Jorge, get out of here!\" yelled Pa.", "\"I need to get your mother! Go! Now!\"")
     printcool("After briefly hesitating, Jeorge bolts away", "Shortly after, he makes it into the nearby woods.")
 
-    printcool("With his back against a tree, he stops to catch his breath.", "He looks up, seeing several shadows moving about the trees.")
+    printcool("With his back against a tree, he stops and gasps for air.", "He looks up, seeing several shadows moving about the trees.")
     printcool("Nobody knows what happened to Jorge.")
     printcool("Some time passes...."), time.sleep(1)
 
@@ -219,7 +219,7 @@ def encounter3(protagonist, zombies):
     printcool(f"{protagonist.name} observes several burning corpses scattered about the small farm. Some are walking, and others lying still on the ground.", "They hear something mumble in the roadside ditch.")
 
     printcool("\"Help... is someone there...\"", f"Looking down, {protagonist.name} sees a mangled body, dressed in bloody overalls.")
-    printcool("\"Get out of here...\", he whimpered with much effort. \"It's not safe.\"", f"They look away and move on. \"I'm so sorry,\" says {protagonist.name} in horror.")
+    printcool("\"Get out of here...\", he whimpered with much effort. \"It's not safe.\"", f"They look away and move on. \"I'm so sorry,\" whimpered {protagonist.name} in horror.")
 
     printcool(f"Three corpses emerge from the trees, and start sprinting towards {protagonist.name}.", "Run or hide?")
     run = get_input("run")
@@ -245,7 +245,7 @@ def encounter3(protagonist, zombies):
         if attack: #Player attacks, and is safe.
             if protagonist.weapon:
                 printcool(f"{protagonist.name} lunges from behind the tree, raising their {protagonist.weapon.name}.", "They land a strong blow to the forehead, and the corpse topples over.")
-                printcool(f"{protagonist.name} stands ready, staring at it on the ground.", "The zombie isn't moving. It looks like the strike was enough.")
+                printcool(f"{protagonist.name} stands ready, staring at the creature lying still on the ground.", "The zombie isn't moving. It looks like the strike was enough.")
                 printcool(f"Getting their bearings, {protagonist.name} walks back in the direction they came.", "Eventually, they emerge back on the road.")
 
             else: #Player dies
@@ -261,8 +261,7 @@ def encounter3(protagonist, zombies):
             printcool(f"With the creature squirming on the ground, {protagonist.name} takes off.", "They rush back toward the road.")
 
 
-    #TODO: ending
-    printcool(f"Now, there were no fiends in sight. {protagonist.name} trudges farther down the road.")
+    printcool(f"Now, there were no fiends in sight.", f"Starving and exhausted, {protagonist.name} didn't have any idea of where to go next.")
 
 
 # TODO: Church encounter(?)
