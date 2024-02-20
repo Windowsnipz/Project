@@ -131,7 +131,7 @@ def encounter2(protagonist):
     zombies += 2
 
     printcool(f"Suddenly, a hand came from under the cruiser, and grabbed {protagonist.name} by the ankle.", "They fell backwards, able to see what was previously hidden underneath the car.")
-    printcool("It was another creature in police uniform, joined by someone else's mangled remains.", "Throw your weapon at them, or kick at their face?")
+    printcool("It was another creature in police uniform, joined by someone else's eaten remains.", "Throw your weapon at them, or kick at their face?")
     throw = get_input("throw")
 
     if throw:
