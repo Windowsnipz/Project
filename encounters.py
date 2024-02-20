@@ -195,6 +195,8 @@ def encounter2(protagonist, zombies):
 
 # Farmboys encounter ("Things aren't like they used to be.")
 def encounter3(protagonist, zombies):
+    global death # Declare death as a global variable
+
     printcool("Meanwhile, in another part Knox County....."), time.sleep(1)
 
     printcool("Jorge was talking with his father in the barn.", "\"Things aren't like they used to be, Pa.\"")
