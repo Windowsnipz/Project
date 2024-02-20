@@ -2,7 +2,7 @@
 import random
 import time
 
-from helpers import Zombie, printcool, random_weapon, get_input
+from helpers import Zombie, printcool, get_input
 
 death = False
 
