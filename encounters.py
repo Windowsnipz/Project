@@ -198,7 +198,7 @@ def encounter3(protagonist, zombies):
     printcool("Meanwhile, in another part Knox County....."), time.sleep(1)
 
     printcool("Jorge was talking with his father in the barn.", "\"Things aren't like they used to be, Pa.\"")
-    printcool("\"Like damn they aren't, Jorge.", "I'll keep doing things that have always worked for us.\"")
+    printcool("\"Like damn they aren't, Jorge.", "I'll keep doing things that have always worked for us. This farm has lasted generations.\"")
 
     printcool("For a moment, the two sit in silence.", "The sound of the wind died down, and the cricket chirps faded. It was dead quiet.")
     printcool("A loud crash and a blood curdling scream rumbled from the house.", "\"What the hell was that?!\" Jorge shouted.")
@@ -206,20 +206,20 @@ def encounter3(protagonist, zombies):
     printcool("The father and son run out the barn and rush over to the house.", "The building was being engulfed by a crowd of people.")
     printcool("The two of them stand in shock, trying to process the situation.", "These weren't people.")
 
-    printcool("\"Jorge, get out of here!\"yelled Pa.", "\"I have to run in and save your mother! Go! Now!!\"")
+    printcool("\"Jorge, get out of here!\"yelled Pa.", "\"I need to get your mother! Go! Now!!\"")
     printcool("After briefly hesitating, Jeorge bolts away", "Shortly after, he makes it into the nearby woods.")
 
     printcool("With his back against a tree, he stops to catch his breath.", "He looks up, seeing several shadows moving about the trees.")
-    printcool("Nobody knows whatever happened to Jorge.")
+    printcool("Nobody knows what happened to Jorge.")
     printcool("Some time passes...."), time.sleep(1)
 
     printcool(f"{protagonist.name} sees a farm in the distance. There's smoke coming from the property.", "Getting closer, they realize the house and barn are up in flames.")
     printcool(f"{protagonist.name} observes several burning corpses scattered about the small farm. Some are walking, and others lying still on the ground.", "They hear something mumble in the roadside ditch.")
 
     printcool("\"Help... is someone there...\"", f"Looking down, {protagonist.name} sees a mangled body, dressed in bloody overalls.")
-    printcool("\"Get out of here...\", he whimpered with much effort. \"It's not safe.\"", f"{protagonist.name} looks away and moves on. \"I'm  sorry.\"")
+    printcool("\"Get out of here...\", he whimpered with much effort. \"It's not safe.\"", f"They look away and move on. \"I'm so sorry,\" says {protagonist.name} in horror.")
 
-    printcool(f"Three corpses emerge from the trees, and start running towards {protagonist.name}.", "Run or hide?")
+    printcool(f"Three corpses emerge from the trees, and start sprinting towards {protagonist.name}.", "Run or hide?")
     run = get_input("run")
 
     if run: #Player runs, trips, and gets hurt by one of the zombies
