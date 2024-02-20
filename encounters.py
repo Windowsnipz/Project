@@ -5,21 +5,21 @@ import time
 from helpers import Zombie, printcool, get_input
 
 death = False
+zombies = 1
 
 def encounters(protagonist):
     printcool(f"{protagonist.name} starts walking down the road, in search of help.")
     hours = 1
-    zombies = 1
     while True:
         num = random.randint(1, 3) #CHANGE LATER. Is set to one number for testing purposes!
         if num == 1:
-            encounter1(protagonist, zombies)
+            encounter1(protagonist)
         if num == 2:
-            encounter2(protagonist, zombies)
+            encounter2(protagonist)
         if num == 3:
-            encounter3(protagonist, zombies)
+            encounter3(protagonist)
         if num == 4:
-            encounter4(protagonist, zombies)
+            encounter4(protagonist)
         if death:
             break
         printcool(f"{protagonist.name} continues walking down the road.")
@@ -30,8 +30,9 @@ def encounters(protagonist):
 
 
 # Rosewood Medical encounter (broken collarbone?)
-def encounter1(protagonist, zombies):
+def encounter1(protagonist):
     global death # Declare death as a global variable
+    global zombies # Declare zombies as a global variable
 
     printcool("Meanwhile, in another part of town....."), time.sleep(1)
     printcool("Noah was squirming in the doctor's office of Rosewood Medical.", "\"I knew I shouldn't have gone skiing today.\"")
@@ -48,7 +49,7 @@ def encounter1(protagonist, zombies):
     printcool("The shocked receptionist stared at them, mouth agape.", "\"What do you mean? Are you hurt?\"")
 
     printcool("A loud crash resounded from the back of the clinic, followed by a scream.", "\"Hey!! What's going on?!\"")
-    printcool("Bodies begain to fill the hallway. Bodies that weren't human.", "Horrific sounds echoed from their mouths.")
+    printcool("Bodies began to fill the hallway. Bodies that weren't human.", "Horrific sounds echoed from their mouths.")
 
     # number of zombies encountered increase by 10.
     zombies += 10
@@ -88,7 +89,7 @@ def encounter1(protagonist, zombies):
 
     else: #run out the door, a zombie catches player by the shirt. 2 choices, one you get hurt, one you don't.
         printcool(f"{protagonist.name} bolts out the door, ready to make a run for it.", "However, one of the undead grabs them by the back of their shirt.")
-        printcool(f"Struggling to pry themselves free, {protagonist.name} underestimated the grip of the twist creature.", "Give a punch or a kick?")
+        printcool(f"Struggling to pry themselves free, {protagonist.name} underestimated the grip of the twisted creature.", "Give a punch or a kick?")
         kick = get_input("kick")
 
         if kick: #Break free with no harm and get away
@@ -112,8 +113,9 @@ def encounter1(protagonist, zombies):
 
 
 # Police car encounter
-def encounter2(protagonist, zombies):
+def encounter2(protagonist):
     global death # Declare death as a global variable
+    global zombies
     zed = Zombie()
 
     printcool("Some time passes...."), time.sleep(1)
@@ -194,8 +196,9 @@ def encounter2(protagonist, zombies):
 
 
 # Farmboys encounter ("Things aren't like they used to be.")
-def encounter3(protagonist, zombies):
+def encounter3(protagonist):
     global death # Declare death as a global variable
+    global zombies
 
     printcool("Meanwhile, in another part Knox County....."), time.sleep(1)
 
@@ -209,7 +212,7 @@ def encounter3(protagonist, zombies):
     printcool("The two of them stand in shock, trying to process the situation.", "These weren't people.")
 
     printcool("\"Jorge, get out of here!\" yelled Pa.", "\"I need to get your mother! Go! Now!\"")
-    printcool("After briefly hesitating, Jeorge bolts away", "Shortly after, he makes it into the nearby woods.")
+    printcool("After briefly hesitating, Jeorge bolts away.", "Shortly after, he makes it into the nearby woods.")
 
     printcool("With his back against a tree, he stops and gasps for air.", "He looks up, seeing several shadows moving about the trees.")
     printcool("Nobody knows what happened to Jorge.")
@@ -243,7 +246,7 @@ def encounter3(protagonist, zombies):
         printcool(f"Slipping into the trees and running a while, {protagonist.name} hides behind a tree, bends over, and catches their breath.", "However, they still hear sounds closing in.")
         printcool(f"{protagonist.name} peeks from behind the tree, and fortunately sees only one creature.", "It's slowly hobbling in their direction.")
 
-        printcool(f"Now approaching the tree, {protagonist.name} was ready to take action.", "Attack or shove it to ground?")
+        printcool(f"Now approaching the tree, {protagonist.name} was ready to take action.", "Attack or shove it to the ground?")
         attack = get_input("attack")    
 
         if attack: #Player attacks, and is safe.
@@ -269,7 +272,7 @@ def encounter3(protagonist, zombies):
 
 
 # TODO: Church encounter(?)
-def encounter4(protagonist, zombies):
+def encounter4(protagonist):
     ...
 
 
