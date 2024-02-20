@@ -235,8 +235,11 @@ def encounter3(protagonist, zombies):
         
         printcool("They manage to slip away into the trees, losing the small pack of zombies.", f"A while later, {protagonist.name} arrives back on the road.")
 
-    else: #Player hides, zombie sneaks up on them, and they have choices whether or not they get hurt
-        ...
+    else: #Player hides, zombie sneaks up on them, and they have choices whether or not they die
+        printcool(f"Slipping into the trees and running a while, {protagonist.name} hides behind a tree, bends over, and catches their breath.", "However, they still hear sounds closing in.")
+        printcool(f"{protagonist.name} peeks from behind the tree, and fortunately sees only one creature.", "It's slowly hobbling in their direction.")
+
+        
 
 
     #TODO: ending
