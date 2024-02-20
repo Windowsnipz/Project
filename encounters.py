@@ -246,9 +246,15 @@ def encounter3(protagonist, zombies):
             if protagonist.weapon:
                 printcool(f"{protagonist.name} lunges from behind the tree, raising their {protagonist.weapon.name}.", "They land a strong blow to the forehead, and the corpse topples over.")
                 printcool(f"{protagonist.name} stands ready, staring at it on the ground.", "The zombie isn't moving. It looks like the strike was enough.")
+                printcool(f"Getting their bearings, {protagonist.name} walks back in the direction they came.", "Eventually, they emerge back on the road.")
 
             else: #Player dies
-                ...
+                printcool(f"How unfortunate. {protagonist.name} lunges from behind the tree with no weapon.", f"Unarmed, {protagonist.name} catches the creature's shoulders.")
+                printcool("However, it wasn't enough.", f"{protagonist.name} underestimated the length of the zombies arms, and it grabs their face, scracthing them all over.")
+                printcool(f"The zombie slowly manages to pull {protagonist.name} to the ground, and all hope was lost.")
+
+                death = True
+                return
 
         else: #Shove to the ground, and run off.
             ...
