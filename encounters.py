@@ -223,10 +223,22 @@ def encounter3(protagonist, zombies):
     run = get_input("run")
 
     if run: #Player runs, trips, and gets hurt by one of the zombies
-        ...
+        printcool(f"{protagonist.name} whips around, seeing the three ghoulish figures closing the distance.", "They make a run for it, but trip over some stones.")
+        printcool(f"{protagonist.name} frantically stands up, but one of them reaches and lands a bit on the back of {protagonist.name}'s arm.")
+
+        protagonist.hurty(25)
+        if protagonist.health <= 0:
+            death = True
+            return
+        
+        printcool("They manage to slip away into the trees, losing the small pack of zombies.", f"A while later, {protagonist.name} arrives back on the road.")
 
     else: #Player hides, zombie sneaks up on them, and they have choices whether or not they get hurt
         ...
+
+
+    #TODO: ending
+    printcool(f"Now, there were no fiends in sight. {protagonist.name} trudges farther down the road.")
 
 
 # TODO: Church encounter(?)
