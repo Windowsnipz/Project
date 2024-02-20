@@ -222,6 +222,10 @@ def encounter3(protagonist, zombies):
     printcool("\"Get out of here...\", he whimpered with much effort. \"It's not safe.\"", f"They look away and move on. \"I'm so sorry,\" whimpered {protagonist.name} in horror.")
 
     printcool(f"Three corpses emerge from the trees, and start sprinting towards {protagonist.name}.", "Run or hide?")
+
+    # number of zombies encountered increase by 3.
+    zombies += 3
+
     run = get_input("run")
 
     if run: #Player runs, trips, and gets hurt by one of the zombies
