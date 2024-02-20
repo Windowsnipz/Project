@@ -257,7 +257,8 @@ def encounter3(protagonist, zombies):
                 return
 
         else: #Shove to the ground, and run off.
-            ...
+            printcool(f"{protagonist.name} lunges from behind the tree, charging the undead corpse.", "They give a strong shove to the chest, and it falls to the ground.")
+            printcool(f"With the creature squirming on the ground, {protagonist.name} takes off.", "They back toward the road.")
 
 
     #TODO: ending
