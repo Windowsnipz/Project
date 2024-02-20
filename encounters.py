@@ -11,7 +11,7 @@ def encounters(protagonist):
     hours = 1
     zombies = 1
     while True:
-        num = random.randint(2, 2) #CHANGE LATER. Is set to one number for testing purposes!
+        num = random.randint(3, 3) #CHANGE LATER. Is set to one number for testing purposes!
         if num == 1:
             encounter1(protagonist, zombies)
         if num == 2:
