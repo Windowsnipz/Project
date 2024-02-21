@@ -284,7 +284,13 @@ def encounter4(protagonist):
     printcool(f"{protagonist.name} gives the window a strong tug upward.", "Thankfully, someone left the window unlocked.")
 
     printcool(f"Quietly, {protagonist.name} glances through the window blinds.", "It was an empty church office, with a desk and bookshelf. The door was shut.")
-    
+    printcool(f"{protagonist.name} slips through the open window, and shuts it behind them.", f"Crouching under the desk, {protagonist.name} rests for a while.")
+
+    printcool("After several minutes, they stand up, and walk to the office door.", "They considered whether or not snooping around the church was a good idea.")
+    printcool(f"A starving {protagonist.name} carefully opens the door.", "It led to a hallway. There had to be a kitchen in the church somewhere.")
+
+    #TODO: player gets to choose the direction they want to go in the hallway.
+
 
 
 
