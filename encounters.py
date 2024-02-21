@@ -271,9 +271,21 @@ def encounter3(protagonist):
     printcool(f"Now, there were no fiends in sight.", f"Starving and exhausted, {protagonist.name} didn't have any idea of where to go next.")
 
 
-# TODO: Church encounter(?)
+# TODO: Church encounter
 def encounter4(protagonist):
-    ...
+    global death
+    global zombies
+    zed = Zombie()
+
+    printcool(f"Some time later, {protagonist.name} sees a church in the distance.", "As they get closer, it seems as if the small church building had an empty parking lot.")
+    printcool(f"{protagonist.name} tries the door, but it's locked.", "They walk to the back of the building, and find another locked door.")
+
+    printcool("Glancing at one of the windows, they walk over and and take a peek inside.", "However, the blinds were shut.")
+    printcool(f"{protagonist.name} gives the window a strong tug upward.", "Thankfully, someone left the window unlocked.")
+
+    printcool(f"Quietly, {protagonist.name} glances through the window blinds.", "It was an empty church office, with a desk and bookshelf. The door was shut.")
+    
+
 
 
 def player_death(hours=0, zombies=1):
