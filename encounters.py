@@ -292,18 +292,29 @@ def encounter4(protagonist):
     printcool("\"There's gotta be a kitchen in here somewhere.\"", "Go right or left? down the hallway?")
     right = get_input("right")
 
+    zombies += 2
+
     if right: #Zombie encounter, chances to get free, get hurt, or get killed.
         printcool(f"{protagonist.name} walks down the hallway.", "They find another door, and open it. It was the actual church sanctuary room.")
         printcool(f"{protagonist.name}, walks in, seeing a lone figure kneeling at the alter.", "It looked like a man, and he was missing an arm.")
 
         printcool(f"\"Sir?\", {protagonist.name} mumbled, \"Are you still there?\"")
         printcool(f"He turns around to look in {protagonist.name}'s direction.", "It was too late.")
+        printcool("They had already turned.", f"The creature rights itself and slowly walks toward {protagonist.name}.")
         
+        printcool(f"{protagonist.name} stares at the sorry corpse walking towards them.", "Attack or leave the room?")
+        attack = get_input("attack")
 
-    else: #Left, find the kitchen. Somehow still have a choice that gets you hurt or not.
+        if attack: #Player pushed the zombie to the ground, and gets away.
+            ...
+
+        else: #Player shuts the door, and leaves the room, startled by another one in the hallway
+
+
+    else: #Left, find the kitchen. 2 Zombies in the kitchen. Somehow still have a choice that gets you hurt or not.
         ...
 
-    #TODO: player gets to choose the direction they want to go in the hallway.
+    #TODO: Ending: Player leaves the church, walking on the road.
 
 
 
