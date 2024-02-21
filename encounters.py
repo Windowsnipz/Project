@@ -315,10 +315,14 @@ def encounter4(protagonist):
             if kick: #Player gets away
                 printcool(f"{protagonist.name} gave a hard kick to the knee joint.", "After a loud crack, the zombie fell to the ground.")
                 printcool(f"{protagonist.name} quickly ran back to the office, and climbed out the window.", "They didn't want to be in the church any longer.")
-                
+
 
             else: #Player dies
-                ...
+                printcool(f"They shove the creature to the ground, but it took {protagonist.name} with them.", "The two stuggled and squirmed on the floor.")
+                printcool(f"Unfortunately, the zombie managed to get on top of {protagonist.name}.", "It was over for them. The screams eventually faded.")
+
+                death = True
+                return
 
 
 
