@@ -371,6 +371,9 @@ def encounter4(protagonist):
                 printcool(f"{protagonist.name} was already too weak from their previous injuries.", "The zombie eats them alive.")
                 death = True
                 return
+            printcool("They shove the monster off of them with much effort.", "They make a break back to the office, and hop out of the window.")
+            printcool(f"Not waiting to stay any longer, {protagonist.name} climbs out of the window.", "The church fades in the distance.")
+
         
         else: #Player dodges, spins around, and runs back to the office.
             ...
