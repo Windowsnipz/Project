@@ -380,7 +380,7 @@ def encounter4(protagonist):
             printcool("They quickly slip through a door that led to a large dining hall.", f"{protagonist.name} hurriedly rushes to the exit that was on the other side of the room.")
             printcool(f"Not waiting to stay any longer, {protagonist.name} bolts out the exit.", "The church fades in the distance as they get away.")
 
-    #TODO: Ending: Player leaves the church, walking on the road.
+    #ending sequence not needed. Player continues along the road.
 
 
 
