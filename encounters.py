@@ -289,6 +289,11 @@ def encounter4(protagonist):
     printcool("After several minutes, they stand up, and walk to the office door.", "They considered whether or not snooping around the church was a good idea.")
     printcool(f"A starving {protagonist.name} carefully opens the door.", "It led to a dimly lit hallway.")
 
+    printcool("There had to be a kitchen in the church somewhere.", "Go right or left? down the hallway?")
+    right = get_input("right")
+
+    if right: 
+
     #TODO: player gets to choose the direction they want to go in the hallway.
 
 
