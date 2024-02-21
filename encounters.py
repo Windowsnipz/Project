@@ -293,7 +293,12 @@ def encounter4(protagonist):
     right = get_input("right")
 
     if right: #Zombie encounter, chances to get free, get hurt, or get killed.
-        ...
+        printcool(f"{protagonist.name} walks down the hallway.", "They find another door, and open it. It was the actual church sanctuary room.")
+        printcool(f"{protagonist.name}, walks in, seeing a lone figure kneeling at the alter.", "It looked like a man, and he was missing an arm.")
+
+        printcool(f"\"Sir?\", {protagonist.name} mumbled, \"Are you still there?\"")
+        printcool(f"He turns around to look in {protagonist.name}'s direction.", "It was too late.")
+        
 
     else: #Left, find the kitchen. Somehow still have a choice that gets you hurt or not.
         ...
