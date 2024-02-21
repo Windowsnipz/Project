@@ -275,7 +275,6 @@ def encounter3(protagonist):
 def encounter4(protagonist):
     global death
     global zombies
-    zed = Zombie()
 
     printcool(f"Some time later, {protagonist.name} sees a church in the distance.", "As they get closer, it seems as if the church parking lot had a single empty car.")
     printcool(f"{protagonist.name} tries the door, but it's locked.", "They walk to the back of the building, and find another locked door.")
@@ -314,7 +313,9 @@ def encounter4(protagonist):
             kick = get_input("kick")
 
             if kick: #Player gets away
-                ...
+                printcool(f"{protagonist.name} gave a hard kick to the knee joint.", "After a loud crack, the zombie fell to the ground.")
+                printcool(f"{protagonist.name} quickly ran back to the office, and climbed out the window.", "They didn't want to be in the church any longer.")
+                
 
             else: #Player dies
                 ...
