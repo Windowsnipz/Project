@@ -305,10 +305,12 @@ def encounter4(protagonist):
         attack = get_input("attack")
 
         if attack: #Player pushed the zombie to the ground, and gets away.
+            if protagonist.weapon:
+                printcool(f"{protagonist.name} twists around the creature, grabs its torso, and pulls it to the ground.", f"After a moment, {protagonist.name} pulls out their {protagonist.weapon.name} and puts the demon out of its misery.")
 
-            #TODO: ADD OPTION IF PLAYER HAS NO WEAPON!!!!
+            else: #No weapon
+                printcool(f"{protagonist.name} twists around the creature, grabs its torso, and pulls it to the ground.", f"After a moment, {protagonist.name} grabs ahold of a metal candlestick and puts the creature out of its misery.")
 
-            printcool(f"{protagonist.name} twists around the creature, grabs its torso, and pulls it to the ground.", f"After a moment, {protagonist.name} pulls out their {protagonist.weapon.name} and puts the demon out of its misery.")
             printcool(f"{protagonist.name} steps out of the room, back into the hallway.", "\"AH!\"")
 
             printcool("They were startled by another ghoul in the hallway.", f"It grabbed {protagonist.name}'s neck. The two were struggling to see who could overpower the other.")
