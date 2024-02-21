@@ -360,7 +360,17 @@ def encounter4(protagonist):
 
         if attack: #Player attacks, and gets hurt
             if protagonist.weapon:
-                printcool(f"{protagonist.name} raises the {protagonist.weapon.name} and lands a good hit on one. It falls over.", "However, ")
+                printcool(f"{protagonist.name} raises the {protagonist.weapon.name} and lands a good hit on one. It falls over.", f"However, the other one pounces on {protagonist.name}.")
+                protagonist.hurty(25)
+
+            else: #No weapon
+                printcool(f"{protagonist.name} lunges forth, and shoves one to the ground.", "The other one was too fast. It pounces on them.")
+                protagonist.hurty(25)
+            
+            if protagonist.health <= 0:
+                printcool(f"{protagonist.name} was already too weak from their previous injuries.", "The zombie eats them alive.")
+                death = True
+                return
         
         else: #Player dodges, spins around, and runs back to the office.
             ...
