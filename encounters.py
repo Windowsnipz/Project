@@ -327,7 +327,22 @@ def encounter4(protagonist):
 
 
         else: #Player shuts the door, and leaves the room, startled by another one in the hallway
-            ...
+            printcool(f"{protagonist.name} softly sidesteps out of the room, and shuts the door to the chapel.", "A moment later, they hear it thumping at the door.")
+            
+            printcool(f"{protagonist.name} turns around.", "\"AH!\"")
+            printcool("Another zombie had managed to sneak up to them from behind.", f"It grabbed {protagonist.name}'s arm and bit down hard.")
+            protagonist.hurty(25)
+
+            if protagonist.health <= 0:
+                printcool(f"{protagonist.name} jerked and managed to free their arm.", f"They sprinted back to the office. However, the damage was done. {protagonist.name} were bleeding out.")
+                death = True
+                return
+            
+            printcool(f"{protagonist.name} manages to free their arm.", "They sprint back to the office, and slam the door shut.")
+            printcool("The wound was bad, but not critical.", f"{protagonist.name} finds a cloth, and ties it around the injury.")
+
+            printcool(f"Not wanting to stay any longer, {protagonist.name} climbs out of the window.", "The church fades in the distance.")
+            
 
 
     else: #Left, find the kitchen. 2 Zombies in the kitchen. Somehow still have a choice that gets you hurt(not die!) or not.
