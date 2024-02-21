@@ -342,11 +342,13 @@ def encounter4(protagonist):
             printcool("The wound was bad, but not critical.", f"{protagonist.name} finds a cloth, and ties it around the injury.")
 
             printcool(f"Not wanting to stay any longer, {protagonist.name} climbs out of the window.", "The church fades in the distance.")
-            
+
 
 
     else: #Left, find the kitchen. 2 Zombies in the kitchen. Somehow still have a choice that gets you hurt(not die!) or not.
-        ...
+        printcool(f"{protagonist.name} takes a left down the short hallway.", "They find a door, adorned with the image of a fork and knife.")
+        printcool("\"This must be it,\" they mumble.", f"{protagonist.name} slowly opens the door. It was indeed the kitchen.")
+
 
     #TODO: Ending: Player leaves the church, walking on the road.
 
