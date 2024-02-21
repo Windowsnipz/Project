@@ -346,6 +346,8 @@ def encounter4(protagonist):
 
 
     else: #Left, find the kitchen. 2 Zombies in the kitchen. Somehow still have a choice that gets you hurt(not die!) or not.
+        zombies += 1 #Add 1 zombie to the count for this encounter. (extra zombie in the kitchen.)
+
         printcool(f"{protagonist.name} takes a left down the short hallway.", "They find a door, adorned with the image of a fork and knife.")
         printcool("\"This must be it,\" they mumble.", f"{protagonist.name} slowly opens the door. It was indeed the kitchen.")
 
