@@ -349,6 +349,16 @@ def encounter4(protagonist):
         printcool(f"{protagonist.name} takes a left down the short hallway.", "They find a door, adorned with the image of a fork and knife.")
         printcool("\"This must be it,\" they mumble.", f"{protagonist.name} slowly opens the door. It was indeed the kitchen.")
 
+        printcool("However, this kitchen was not empty.", f"Two zombies had their back to {protagonist.name}. Slowly, they turned around.")
+        printcool("\"Great...\"", f"The two sprint towards {protagonist.name}. Attack or dodge?")
+        attack = get_input("attack")
+
+        if attack: #Player attacks, and gets hurt
+            ...
+        
+        else: #Player dodges, spins around, and runs back to the office.
+            ...
+
 
     #TODO: Ending: Player leaves the church, walking on the road.
 
