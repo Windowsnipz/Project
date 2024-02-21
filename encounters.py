@@ -277,7 +277,7 @@ def encounter4(protagonist):
     global zombies
     zed = Zombie()
 
-    printcool(f"Some time later, {protagonist.name} sees a church in the distance.", "As they get closer, it seems as if the small church building had an empty parking lot.")
+    printcool(f"Some time later, {protagonist.name} sees a church in the distance.", "As they get closer, it seems as if the church parking lot had a single empty car.")
     printcool(f"{protagonist.name} tries the door, but it's locked.", "They walk to the back of the building, and find another locked door.")
 
     printcool("Glancing at one of the windows, they walk over and and take a peek inside.", "However, the blinds were shut.")
@@ -287,7 +287,7 @@ def encounter4(protagonist):
     printcool(f"{protagonist.name} slips through the open window, and shuts it behind them.", f"Crouching under the desk, {protagonist.name} rests for a while.")
 
     printcool("After several minutes, they stand up, and walk to the office door.", "They considered whether or not snooping around the church was a good idea.")
-    printcool(f"A starving {protagonist.name} carefully opens the door.", "It led to a hallway. There had to be a kitchen in the church somewhere.")
+    printcool(f"A starving {protagonist.name} carefully opens the door.", "It led to a dimly lit hallway.")
 
     #TODO: player gets to choose the direction they want to go in the hallway.
 
