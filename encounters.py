@@ -11,7 +11,7 @@ def encounters(protagonist):
     printcool(f"{protagonist.name} starts walking down the road, in search of help.")
     hours = 1
     while True:
-        num = random.randint(1, 3) #CHANGE LATER. Is set to one number for testing purposes!
+        num = random.randint(4, 4) #CHANGE LATER. Is set to one number for testing purposes!
         if num == 1:
             encounter1(protagonist)
         if num == 2:
