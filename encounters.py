@@ -292,7 +292,11 @@ def encounter4(protagonist):
     printcool("There had to be a kitchen in the church somewhere.", "Go right or left? down the hallway?")
     right = get_input("right")
 
-    if right: 
+    if right: #Zombie encounter
+        ...
+
+    else: #Find the kitchen
+        ...
 
     #TODO: player gets to choose the direction they want to go in the hallway.
 
