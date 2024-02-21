@@ -306,12 +306,26 @@ def encounter4(protagonist):
         attack = get_input("attack")
 
         if attack: #Player pushed the zombie to the ground, and gets away.
-            ...
+            printcool(f"{protagonist.name} twists around the creature, grabs its torso, and pulls it to the ground.", f"After a moment, {protagonist.name} pulls out their {protagonist.weapon.name} and puts the demon out of its misery.")
+            printcool(f"{protagonist.name} steps out of the room, back into the hallway.", "\"AH!\"")
+
+            printcool("They were startled by another ghoul in the hallway.", f"It grabbed {protagonist.name}'s neck. The two were struggling to see who could overpower the other.")
+            printcool("This one was clearly strong.", "Give it a shove or a kick?")
+            kick = get_input("kick")
+
+            if kick: #Player gets away
+                ...
+
+            else: #Player dies
+                ...
+
+
 
         else: #Player shuts the door, and leaves the room, startled by another one in the hallway
             ...
 
-    else: #Left, find the kitchen. 2 Zombies in the kitchen. Somehow still have a choice that gets you hurt or not.
+
+    else: #Left, find the kitchen. 2 Zombies in the kitchen. Somehow still have a choice that gets you hurt(not die!) or not.
         ...
 
     #TODO: Ending: Player leaves the church, walking on the road.
