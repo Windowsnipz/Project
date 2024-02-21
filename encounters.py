@@ -305,6 +305,9 @@ def encounter4(protagonist):
         attack = get_input("attack")
 
         if attack: #Player pushed the zombie to the ground, and gets away.
+
+            #TODO: ADD OPTION IF PLAYER HAS NO WEAPON!!!!
+
             printcool(f"{protagonist.name} twists around the creature, grabs its torso, and pulls it to the ground.", f"After a moment, {protagonist.name} pulls out their {protagonist.weapon.name} and puts the demon out of its misery.")
             printcool(f"{protagonist.name} steps out of the room, back into the hallway.", "\"AH!\"")
 
@@ -356,7 +359,8 @@ def encounter4(protagonist):
         attack = get_input("attack")
 
         if attack: #Player attacks, and gets hurt
-            ...
+            if protagonist.weapon:
+                printcool(f"{protagonist.name} raises the {protagonist.weapon.name} and lands a good hit on one. It falls over.", "However, ")
         
         else: #Player dodges, spins around, and runs back to the office.
             ...
