@@ -283,9 +283,9 @@ def encounter4(protagonist):
     printcool(f"{protagonist.name} gives the window a strong tug upward.", "Thankfully, someone left the window unlocked.")
 
     printcool(f"Quietly, {protagonist.name} glances through the window blinds.", "It was an empty church office, with a desk and bookshelf. The door was shut.")
-    printcool(f"{protagonist.name} slips through the open window, and shuts it behind them.", f"Crouching under the desk, {protagonist.name} rests for a while.")
+    printcool(f"{protagonist.name} slips through the open window, and shuts it behind them.", f"Crouching under the desk, they rest for a while.")
 
-    printcool("After several minutes, they stand up, and walk to the office door.", "They considered whether or not snooping around the church was a good idea.")
+    printcool(f"After several minutes, {protagonist.name} stands up, and walks to the office door.", "They considered whether or not snooping around the church was a good idea.")
     printcool(f"A starving {protagonist.name} carefully opens the door.", "It led to a dimly lit hallway.")
 
     printcool("\"There's gotta be a kitchen in here somewhere.\"", "Go right or left? down the hallway?")

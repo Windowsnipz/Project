@@ -237,7 +237,7 @@ def emily_encounter2(protagonist):
                 return False # Player dies
 
     else:
-        printcool(f"She stands up, glaring wide-eyed at {protagonist.name}", "\"EMI-\"")
+        printcool(f"She stands up, glaring wide-eyed at {protagonist.name}.", "\"EMI-\"")
         printcool(f"Emily lunges at {protagonist.name}, demonic sounds echoing from her throat.", "Defend yourself, or do nothing?")
 
         defend = get_input("defend")
