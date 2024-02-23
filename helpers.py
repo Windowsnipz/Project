@@ -146,6 +146,6 @@ def get_input(keyword="", type=""):
 
 # Picks a number from a list, saving that number in a variable, then removing that number from the list.
 # This function is used to pick a random encounter, but removing it from the list so it doesn't repeat.
-def cycle_encounters(num_encounters):
-    encounters = list(range(1, num_encounters + 1)) # num_encounters + 1 is used because range() doesn't include the last number.
-    
+def cycle_encounters():
+    ...
+
