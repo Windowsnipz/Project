@@ -4,8 +4,6 @@ import time
 
 from helpers import Zombie, printcool, get_input
 
-NUM_ENCOUNTERS = 4
-
 death = False
 zombies = 1
 
