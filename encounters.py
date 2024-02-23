@@ -7,11 +7,14 @@ from helpers import Zombie, printcool, get_input
 death = False
 zombies = 1
 
+
 def encounters(protagonist):
+    list_of_encounters = [1, 2, 3, 4]
+
     printcool(f"{protagonist.name} starts walking down the road, in search of help.")
     hours = 1
     while True:
-        num = random.randint(4, 4) #CHANGE LATER. Is set to one number for testing purposes!
+        num = random.choice(list_of_encounters) #CHANGE LATER. Is set to one number for testing purposes!
         if num == 1:
             encounter1(protagonist)
         if num == 2:
@@ -23,7 +26,10 @@ def encounters(protagonist):
         if death:
             break
         printcool(f"{protagonist.name} continues walking down the road.")
+
         hours += 1
+        list_of_encounters.remove(num)
+
     player_death(hours, zombies)
 
 

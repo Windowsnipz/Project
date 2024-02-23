@@ -143,9 +143,3 @@ def get_input(keyword="", type=""):
         time.sleep(1.5)
         return False
     
-
-# Picks a number from a list, saving that number in a variable, then removing that number from the list.
-# This function is used to pick a random encounter, but removing it from the list so it doesn't repeat.
-def cycle_encounters():
-    ...
-
