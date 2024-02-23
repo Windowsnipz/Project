@@ -1,4 +1,4 @@
-# Loops player encounters until player dies :(
+# Loops player encounters until they die or finish each one.
 import random
 import time
 
