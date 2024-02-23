@@ -20,6 +20,7 @@ class Character:
     def name(self):
         return self._name
 
+# Zombie object
 class Zombie:
     def __init__(self, health=50, damage=25):
         self.health = health
@@ -65,8 +66,6 @@ def start_game():
 
 
 # Gets character name and returns a character object
-            #TODO - Add a check for the name to make sure it's not empty, or too long.
-            #TODO - Make sure name is not in GLOBAL_CHARACTERS
 def get_character_name():
     while True:
         printcool("+--------------------------------------------+", end=None, delay=0.01)
@@ -119,7 +118,6 @@ def printcool(text, text2="", end="+--------------------------------------------
         time.sleep(1.1)
 
 # Gets input from the user, validates it. Is customizable for different types of input.
-# TODO: Add a check for the input to make sure it's not empty.
 def get_input(keyword="", type=""):
     if type == "":
         choice = input().lower()
@@ -141,4 +139,3 @@ def get_input(keyword="", type=""):
         print()
         time.sleep(1.5)
         return False
-    
