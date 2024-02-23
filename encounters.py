@@ -13,7 +13,7 @@ def encounters(protagonist):
 
     printcool(f"{protagonist.name} starts walking down the road, in search of help.")
     hours = 1
-    while True:
+    while list_of_encounters:
         num = random.choice(list_of_encounters) #CHANGE LATER. Is set to one number for testing purposes!
         if num == 1:
             encounter1(protagonist)
@@ -24,13 +24,15 @@ def encounters(protagonist):
         if num == 4:
             encounter4(protagonist)
         if death:
+            player_death(hours, zombies)
             break
         printcool(f"{protagonist.name} continues walking down the road.")
 
         hours += 1
         list_of_encounters.remove(num)
 
-    player_death(hours, zombies)
+    if not death:
+        printcool("You made it! Congratulations!")
 
 
 
