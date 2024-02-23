@@ -32,7 +32,10 @@ def encounters(protagonist):
         list_of_encounters.remove(num)
 
     if not death:
-        printcool("You made it! Congratulations!")
+        printcool("You made it! You won! Congratualations!", f"You survived for {hours} hour(s), and encountered {zombies} zombie(s).")
+        printcool("Or did you really win?", "......")
+        printcool(f"{protagonist.name} collapses on the lonely road, completely exhausted.", "This...")
+        printcool("This is how you died.")
 
 
 
