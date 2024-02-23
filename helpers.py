@@ -1,4 +1,3 @@
-import sys
 import random
 import time
 
@@ -76,12 +75,12 @@ def get_character_name():
         printcool("\n+--------------------------------------------+", end=None, delay=0.01)
         time.sleep(1.1)
         name = name.title()
-        if name not in GLOBAL_CHARACTERS:
+        if name not in GLOBAL_CHARACTERS and name != "":
             # Establish the protagonist as a Character object
             protagonist = Character(name)
             return protagonist
             
-        printcool(f"{name} is already a character in the story. Please choose another name.", end=None)
+        printcool("Your name is too short, or the name is already a character in the story. Please choose another name.", end=None)
 
 
 # A 1.5 second delay for the console output

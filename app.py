@@ -1,7 +1,5 @@
 import random
 import sys
-import time
-import os #TODO add line wrapping
 import sys
 
 from helpers import printcool, start_game
