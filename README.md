@@ -10,6 +10,8 @@ Afterwards, the actual introduction scenario will run. This scene will always be
 
 The character object initializes with a health attribute set to 100. This value changes along the story if the player suffers injuries, in which the hurty method will reduce the health of the user. The name property of the character object is used in formatted strings in the dialougue to return the name of the player. The character object also initializes with self.weapon = None. This value will actually change if the player decides to pick up the spawned weapon at the start of the game. The weapon object will be related to the character object in this way.
 
+The weapon object initializes with required arguments of "name" and "damage". This object also has a name property which identically returns the name of the weapon. This can be seen in the formatted dialogue strings, calling {protagonist.weapon.name}, where 'protagonist' is a character object. The weapon object is nested within the character object if the player chooses a weapon. Making this game has helped in my understand of object-oriented programming (OOP).
+
 
 
 
