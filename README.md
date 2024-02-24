@@ -13,11 +13,16 @@ The character object initializes with a health attribute set to 100. This value 
 
 The weapon object initializes with required arguments of "name" and "damage". This object also has a name property which identically returns the name of the weapon. This can be seen in the formatted dialogue strings, calling {protagonist.weapon.name}, where 'protagonist' is a character object. The weapon object is nested within the character object if the player chooses a weapon. Making this game has helped in my understand of object-oriented programming (OOP).
 
+There is also a zombie object, which is functionally similar to the character object. I only implemented it a few times in the story, just to add more OOP practice to my project. The zombie also has health and damage values.
+
 ##### Story Design
 Ultimately, my goal with the story design was to capture the hardcore survival aspect of Project Zomboid.
 
-The story is stuctured in a way that the player cycles through four different encounters/scenarios at random. Within these encounters, players have a variety of choices they make that impacts whether they survive, get hurt, or die. Additionally, variable like hours survived and zombies encountered will be updated and stored accordingly. If the character's health reaches zero, the player_death function will execute displaying how long they survived (in hours) and how many zombies they encountered on their playthrough. If the player successfully survives the introduction and all four encounters, a special surprise is presented to them at the end 😊.
+The story is stuctured in a way that the player cycles through four different encounters/scenarios at random. Within these encounters, players have a variety of choices they make that impacts whether they survive, get hurt, or die. Other than getting input from the player, these encounters were all written by myself and feature an engaging story. Variables like hours survived and zombies encountered will be updated and stored accordingly. If the character's health reaches zero, the player_death function will execute displaying how long they survived (in hours) and how many zombies they encountered on their playthrough. If the player successfully survives the introduction and all four encounters, a special surprise is presented to them at the end 😊.
 
 ##### Final Thoughts
 If I were to design this game again, I would like to tidy up some code and make the whole codebase more modular as a whole. Also, I think I would implement this in a game engine like Ren'Py, which is set up for visual novels. I feel like adding more rpg elements would also be fun. Features like injuries and a moodle system (similar to PZ) would also make this a unique experience.
 
+##### Citing Tools Used
+Github CoPilot and CS50.ai were both utilized for debugging and as an aid in writing certain helper functions.
+ChatGPT was used to help me design the format for this program, pointing out that splitting it into four python files can make it more modular.
