@@ -18,3 +18,6 @@ Ultimately, my goal with the story design was to capture the hardcore survival a
 
 The story is stuctured in a way that the player cycles through four different encounters/scenarios at random. Within these encounters, players have a variety of choices they make that impacts whether they survive, get hurt, or die. Additionally, variable like hours survived and zombies encountered will be updated and stored accordingly. If the character's health reaches zero, the player_death function will execute displaying how long they survived (in hours) and how many zombies they encountered on their playthrough. If the player successfully survives the introduction and all four encounters, a special surprise is presented to them at the end 😊.
 
+##### Final Thoughts
+If I were to design this game again, I would like to tidy up some code and make the whole codebase more modular as a whole. Also, I think I would implement this in a game engine like Ren'Py, which is set up for visual novels. I feel like adding more rpg elements would also be fun. Features like injuries and a moodle system (similar to PZ) would also make this a unique experience.
+
