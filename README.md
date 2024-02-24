@@ -1,11 +1,8 @@
 # Zomboid: Rosewood Rising
 #### Video Demo:  <URL HERE>
 #### Description:
-TODO
 
-
-
-# My final project for CS50x
+Welcome to my final project for CS50x! This is a command line game, inspired by the very popular Project Zomboid. Project Zomboid (PZ) is a hardcore survival game set in a zombie apocalypse. In my project, I wanted to capture this setting in a text-based adventure game! 
 
 
 
