@@ -186,6 +186,13 @@ def encounter2(protagonist):
 
     else: #Kick at their face
         printcool(f"{protagonist.name} throws a strong heel to the creature's face.", f"It softens its grip, and {protagonist.name} prys themselves free.")
+        printcool(f"{protagonist.name} notices they suffered a small bite on their ankle.", "Maybe kicking the zombie in the face wasn't the best idea.")
+
+        protagonist.hurty(25)
+        if protagonist.health <= 0:
+            death = True
+            return
+
         printcool("The zombie still contiues to crawl towards them.", "Run away or give it a strong heel to the head?")
         run = get_input("run")
 
@@ -304,7 +311,7 @@ def encounter4(protagonist):
 
     zombies += 2
 
-    if right: #Zombie encounter, chances to get free, get hurt, or get killed.
+    if right: #Zombie encounter
         printcool(f"{protagonist.name} walks down the hallway.", "They find another door, and open it. It was the actual church sanctuary room.")
         printcool(f"{protagonist.name}, walks in, seeing a lone figure kneeling at the alter.", "It looked like a man, and he was missing an arm.")
 
@@ -325,6 +332,13 @@ def encounter4(protagonist):
             printcool(f"{protagonist.name} steps out of the room, back into the hallway.", "\"AH!\"")
 
             printcool("They were startled by another ghoul in the hallway.", f"It grabbed {protagonist.name}'s neck. The two were struggling to see who could overpower the other.")
+            protagonist.hurty(25)
+
+            if protagonist.health <= 0:
+                printcool(f"They creature gashed {protagonist.name}'s neck wide open.", "They lost consciousness, and fell to the floor.")
+                death = True
+                return
+
             printcool("This one was clearly strong.", "Give it a shove or a kick?")
             kick = get_input("kick")
 
@@ -350,7 +364,7 @@ def encounter4(protagonist):
             protagonist.hurty(25)
 
             if protagonist.health <= 0:
-                printcool(f"{protagonist.name} jerked and managed to free their arm.", f"They sprinted back to the office. However, the damage was done. {protagonist.name} were bleeding out.")
+                printcool(f"{protagonist.name} jerked and managed to free their arm.", f"They sprinted back to the office. However, the damage was done. {protagonist.name} was bleeding out.")
                 death = True
                 return
             
