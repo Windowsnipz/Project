@@ -2,7 +2,7 @@
 #### Video Demo:  <URL HERE>
 #### Description:
 
-Welcome to my final project for CS50x! This is a command line game, inspired by the very popular Project Zomboid. Project Zomboid (PZ) is a hardcore survival game set in a zombie apocalypse. In my project, I wanted to capture this setting in a text-based adventure game! 
+Welcome to my final project for CS50x! This is a command line game, inspired by the very popular Project Zomboid. Project Zomboid (PZ) is a hardcore survival game set in a zombie apocalypse. In my project, I wanted to capture this setting in a text-based adventure game! Text in this game is rendered to the terminal with a custom 'printcool' function, which can take several arguments and print dialougue in a modular format. This makes the game dialougue more readable to the user.
 
 Zomboid: Rosewood Rising starts with a simplistic menu screen, in which the player chooses whether or not to start the game. Upon starting, the introduction to the story in path1.py is executed, and the player will be prompted to enter a name for their survivor. My get_character_name() function in helpers.py was fairly simple to implement. Basically, it makes sure that (1) the name is not empty and (2) the name does not match the list of existing characters in the story (GLOBAL_CHARACTERS list).
 
