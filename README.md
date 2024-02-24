@@ -8,7 +8,7 @@ Zomboid: Rosewood Rising starts with a simplistic menu screen, in which the play
 
 Afterwards, the actual introduction scenario will run. This scene will always be run at the start of the game. However, there are several decision trees the player will follow. First, the dialougue draws the user's attention to a random weapon that will spawn upon starting the game. Both the character and the weapons are python objects defined in helpers.py. Additionally, I implemented a random feature, so one of the three different weapons will spawn randomly. It is up to the player whether or not they choose to take the weapon. Choices in this game are determined by a text input by the user with the get_input() function. This function is written to get either regular text input or can be modified to get a boolean expression from the user (yes or no). It works for looking for a keyword inputted by the user. Empty responses will default to one of the prompted choices.
 
-The character object
+The character object initializes with a health attribute set to 100. This value changes along the story if the player suffers injuries, in which the hurty method will reduce the health of the user. The name property of the character object is used in formatted strings in the dialougue to return the name of the player. The character object also initializes with self.weapon = None. This value will actually change if the player decides to pick up the spawned weapon at the start of the game. The weapon object will be related to the character object in this way.
 
 
 
