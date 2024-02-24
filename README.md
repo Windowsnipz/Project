@@ -14,5 +14,5 @@ The character object initializes with a health attribute set to 100. This value 
 The weapon object initializes with required arguments of "name" and "damage". This object also has a name property which identically returns the name of the weapon. This can be seen in the formatted dialogue strings, calling {protagonist.weapon.name}, where 'protagonist' is a character object. The weapon object is nested within the character object if the player chooses a weapon. Making this game has helped in my understand of object-oriented programming (OOP).
 
 ##### Story Design
-
+The story is designed in a way that the player cycles through four different encounters/scenarios at random. Within these encounters, players have a variety of choices they make that impacts whether they survive, get hurt, or die. Additionally, variable like hours survived and zombies encountered will be updated and stored accordingly. If the character's health reaches zero, the player_death function will execute displaying how long they survived (in hours) and how many zombies they encoutered on their playthrough.
 
