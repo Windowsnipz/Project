@@ -13,9 +13,6 @@ class Character:
     def hurty(self, damage_amount):
         self.health -= damage_amount
 
-    def heal(self, restore_amount):
-        self.health += restore_amount
-
     @property
     def name(self):
         return self._name
